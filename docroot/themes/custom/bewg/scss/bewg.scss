@@ -1,0 +1,131 @@
+/* @file
+ * This file is a custom file that loads all files. Each non-base layer
+ * can be disabled.
+ *
+ * Do not name this file "STARTER.scss". This file should be named
+ * THEMENAME.scss. If you used the drush command to generate this subtheme,
+ * it should be named for you.
+ *
+ * This application file (ntest.scss) is where all the partials are
+ * imported.
+ */
+
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+// Import normalize.css
+@import "../node_modules/normalize.css/normalize.css";
+
+// Import Bourbon.
+@import "../node_modules/bourbon/app/assets/stylesheets/bourbon";
+
+// Import Bitters.
+@import "base/bitters";
+
+// Import Neat.
+@import "../node_modules/bourbon-neat/app/assets/stylesheets/neat";
+@import "../node_modules/bourbon-neat/app/assets/stylesheets/neat-helpers";
+
+// Import variables.
+@import "variables/breakpoints";
+@import "variables/colors";
+
+// Import layout.
+@import "base/layout";
+
+// Import Drupal element overrides
+@import "common/messages";
+@import "common/tables";
+@import "common/tasks";
+
+// Import your components here.
+@import "components/breadcrumb";
+@import "components/hero";
+@import "components/flexbox";
+@import "components/footer";
+
+div {
+
+  .page {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 80px);
+
+    main {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      max-width: unset;
+
+      &.outer-wrapper {
+
+        &::after {
+          display: none;
+        }
+
+        #main-content {
+          display: none;
+        }
+
+        #sidebar-first {
+          background-color: #006BAC;
+          position: relative;
+
+          &>div {
+            height: 100%;
+          }
+
+          #block-bewg-branding {
+            width: 100%;
+            padding-top: 30px;
+
+            a {
+              display: block;
+              position: absolute;
+              right: 0;
+              left: 0;
+              margin: 0 auto;
+              max-width: 201px;
+              z-index: 1000;
+            }
+          }
+
+          #block-mainnavigation {
+            height: 100%;
+            position: relative;
+            background-color: #006BAC;
+
+            ul {
+
+              &.menu {
+                height: 40%;
+                width: 50%;
+                margin: auto;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+
+                .menu-item {
+                  height: calc(100% / 6);
+
+                  a {
+                    color: white;
+                    text-decoration: none;
+
+                    &:hover {
+
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
