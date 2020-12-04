@@ -1,0 +1,11 @@
+@mixin square {
+  border-radius: 0;
+}
+
+@mixin circle {
+  border-radius: 50%;
+}
+
+@mixin rounded {
+  border-radius: 10%;
+}
