@@ -58,7 +58,7 @@
         "files": ["load.environment.php"]
     },
     "extra": {
-        "composer-exit-on-patch-failure": true,
+        "composer-exit-on-patch-failure": false,
         "installer-types": ["bower-asset", "npm-asset"],
         "installer-paths": {
             "docroot/core": ["type:drupal-core"],
