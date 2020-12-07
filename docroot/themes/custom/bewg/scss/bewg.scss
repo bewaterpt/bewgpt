@@ -55,6 +55,22 @@ div {
     width: 100%;
     height: calc(100% - 80px);
 
+    /*BACKGROUND DA ATIVIDADE*/
+    .field__label{
+      display: none;
+    }
+    #node-3{
+      background-image: url("../img/backdrop-the-company.png");
+      height: 100vh;
+    }
+    /*TEXTO DA ATIVIDADE*/
+    .field__item{
+      color: #1C3F85;
+      font-size: 3em;
+      padding-top: 5%;
+      padding-left: 10%;
+    }
+
     main {
       display: grid;
       grid-template-columns: 300px 1fr;
@@ -103,7 +119,7 @@ div {
           #block-mainnavigation {
             height: 100%;
             position: relative;
-            background-color:green;
+            background-color: #006BAC;
             width: 30vh;
             ul {
 
