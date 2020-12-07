@@ -4,6 +4,8 @@ global-styling:
     base:
       css/bewg.css: {}
 global-scripts:
+  dependencies:
+    - core/jquery
   version: VERSION
   js:
     js/scripts.js: {}

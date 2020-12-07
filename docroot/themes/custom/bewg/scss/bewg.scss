@@ -68,9 +68,9 @@ div {
       height: 100vh;
     }
 
-    a {
-      pointer-events:none;
-    }
+
+    
+
     /*TEXTO DA ATIVIDADE*/
     .field__item{
       color: #1C3F85;
@@ -125,12 +125,43 @@ div {
           }
 
           #block-mainnavigation {
+
+            ul {
+      
+              &>.menu-item {
+              
+                ul {
+                  overflow: hidden;
+                  height: 100px;
+                  max-height: 0;
+                  transition: max-height linear 1s;
+                  
+                  
+                  &.active {
+                    max-height: 100px;
+                    transition: max-height linear 1s;
+                    
+                  }
+                  
+                  
+                  &>.menu-item {
+                    // display: none;
+                    
+                  }
+                }
+              }
+      
+            }
+          }
+
+          #block-mainnavigation {
             height: 100%;
             position: relative;
             background-color: #006BAC;
             width: 30vh;
-            ul {
 
+            ul {
+              
               &.menu {
                 height: 40%;
                 width: 50%;
@@ -141,7 +172,7 @@ div {
                 left: 0;
                 right: 0;
                 
-
+                
                 .menu-item {
                   height: calc(100% / 6);
 
