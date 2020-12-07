@@ -63,6 +63,14 @@ div {
       background-image: url("../img/backdrop-the-company.png");
       height: 100vh;
     }
+    #node-1{
+      background-image:url("../img/backdrop.png");
+      height: 100vh;
+    }
+
+    a {
+      pointer-events:none;
+    }
     /*TEXTO DA ATIVIDADE*/
     .field__item{
       color: #1C3F85;
