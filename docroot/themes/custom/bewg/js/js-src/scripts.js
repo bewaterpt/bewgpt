@@ -9,10 +9,9 @@
             event.preventDefault();
             $(event.currentTarget).toggleClass("menuDrop");
             $(event.currentTarget).find(".menu").toggleClass("active");
-            alert("erro")
+            
         }
         else{
-           alert("certo")
            console.log("ver: "+$(event.currentTarget).children("ul").length); 
         }
         

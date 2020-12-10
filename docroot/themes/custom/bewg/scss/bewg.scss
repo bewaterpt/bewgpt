@@ -234,14 +234,16 @@ div {
                 .menu-item {
                   height: calc(60% / 6);
                   vertical-align: middle;
-                      &:hover {
-                          background-color: #005E9B;
-                          cursor: pointer;
-                      }
+
                   a {
                     color: white;
                     text-decoration: none;
-
+                    padding: 0 0 0 30%!important;
+                  
+                    &:hover {
+                        background-color: #005E9B;
+                        cursor: pointer;
+                    }
                   }
                 }
               }
