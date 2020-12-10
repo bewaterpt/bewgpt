@@ -171,39 +171,42 @@ div {
               .menuDrop {
                 
                 outline: none;
-                height: 160px!important;
-                max-height: 160px;
+                height: 170px!important;
+                max-height: 170px;
                 background-color: #005E9B;
-                
+                z-index: 1;
               }
               &>.menu-item {
-              
+                padding: 3px 0;
+
                 a{
                   width: 100%;
-                  height: 100%;
                   display: inline-block;
-                  padding: 10px 10px 10px 30%;
                   outline:none;
                 }
 
                 ul {
 
-                  margin-top: calc(70% / 6);
+                  margin-top: calc(60% / 6);
                   overflow: hidden;
                   visibility: hidden;
-                  
+                  @include small {
+
+                  }
+
                   &.active {
                     visibility: visible;
                     overflow: hidden;
                     background-color: #005E9B;
                     height: 130px;
+                    z-index: 1;
+                    
                   }
                   
                   
                   &>.menu-item {
                     height: calc(100%/3)!important;
-                    padding-top: 10px;
-                    text-indent: 20px;
+                    text-indent: 10px;
 
                     
                   }
@@ -232,14 +235,17 @@ div {
                 
                 
                 .menu-item {
-                  height: calc(60% / 6);
+                  $menuItemHeight: calc(100% / 6);
+                  height: $menuItemHeight;
                   vertical-align: middle;
+                  line-height: 66.6px;
+                  padding: 0 30%;
 
                   a {
                     color: white;
                     text-decoration: none;
-                    padding: 0 0 0 30%!important;
-                  
+                    height: 100%;
+
                     &:hover {
                         background-color: #005E9B;
                         cursor: pointer;

@@ -1,11 +1,11 @@
-@mixin square {
-  border-radius: 0;
+@mixin small {
+  @media screen and (max-width: 680px){
+    @content;
+  }
 }
 
-@mixin circle {
-  border-radius: 50%;
-}
-
-@mixin rounded {
-  border-radius: 10%;
+@mixin medium {
+  @media screen and (min-width: 681px) and (max-width: 1200px) {
+    @content;
+  }
 }
