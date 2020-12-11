@@ -37,11 +37,11 @@
         {{ page.sidebar }}
       </aside>
     {% endif %}
-
-    <section id="content">
+    
+    <section id="content" style="background-image: url({{ background_url }}); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;" >
       {{ page.content }}
     </section>
-
+  
     {% if page.sidebar_second %}
       <aside id="sidebar-second" role="complementary" class="sidebar">
         {{ page.sidebar_second }}

@@ -6,6 +6,8 @@
  */
 
 use Drupal\Core\Url;
+use Drupal\media\Entity\Media;
+use Drupal\file\Entity\File;
 
 /**
  * Implements template_preprocess_html().
@@ -41,17 +43,35 @@ function bewg_preprocess_html(&$variables) {
  */
 function bewg_preprocess_page(&$variables) {
 
-  $site_name = \Drupal::configFactory()->get('system.site')->get('name');
+  // $site_name = \Drupal::configFactory()->get('system.site')->get('name');
 
-  $variables['linked_site_name'] = [
-    '#type' => 'link',
-    '#title' => $site_name,
-    '#url' => Url::fromRoute('<front>'),
-  ];
+  // $variables['linked_site_name'] = [
+  //   '#type' => 'link',
+  //   '#title' => $site_name,
+  //   '#url' => Url::fromRoute('<front>'),
+  // ];
+  // $variables["background_url"] = "";
+
+  
+
+  @$targetId = $variables["node"]->field_background_image->target_id;
+  @$mediaEntity = Media::load($targetId);
+  @$fileEntity = File::load($mediaEntity->field_image->target_id);
+  
+  $variables["background_url"] = $fileEntity->createFileUrl();
+
+  
 }
 
 /**
  * Implements template_preprocess_node.
  */
 function bewg_preprocess_node(&$variables) {
+  
 }
+
+function bewg_preprocess_node__page(&$variables) {
+ 
+
+}
+

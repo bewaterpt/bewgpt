@@ -30,6 +30,9 @@
 @import "variables/breakpoints";
 @import "variables/colors";
 
+// Import Mixins
+@import "mixins/mixins";
+
 // Import layout.
 @import "base/layout";
 
@@ -55,47 +58,73 @@ div {
     width: 100%;
     height: calc(100% - 80px);
 
-    article {
+    #content {
+      // background: url("../img/backdrop.png") no-repeat center center fixed;
+      // background-size: cover;
 
-      .field--name-field-basic-page-paragraphs {
+      #block-bewg-content {
+        height: 100vh;
+  
+        article {
+          
+          .field--name-field-basic-page-paragraphs {
+            margin:0px 80px 30px 80px;
+            max-height: 80vh;
+            overflow-y: hidden;
+            text-align: left;
 
-        .field__items {
-          background-color: rgba(0,0,0,0.4);
-          margin:0px 30px 30px 30px;
-          max-height: 80vh;
-          padding: 10px;
-          overflow-y: hidden;
-          text-align: left;
-          .field__item {
-            
-            .paragraph {
-              
-            .field--name-field-text {
-              font-size: 1em;
-              color: white;
+            .field__item {
+              width:100%;
+              // overflow: hidden;
+              word-break: break-all;
+              .paragraph {
+                
+                .field--name-field-text {
+                  color: white;
+                  margin-top: 20px; 
+                  padding: 10px;
+                  padding-top: 1%;
+                  background-color: rgba(0,0,0,0.6);
+                  max-height: 350px;
+                  overflow-y: scroll;
+                }
+
+                ::-webkit-scrollbar {
+                  width: 10px;
+                }
+                /* Track */
+                ::-webkit-scrollbar-track {
+                  background: #f1f1f1; 
+                }
+                
+                /* Handle */
+                ::-webkit-scrollbar-thumb {
+                  background: #888; 
+                }
+
+                /* Handle on hover */
+                ::-webkit-scrollbar-thumb:hover {
+                  background: #555; 
+                }
+              }
             }
           }
+  
+          #node-1{
+            //background-image:url("../img/backdrop.png");
+            
+          }
+    
+          #node-3{
+            //background-image: url("../img/backdrop-the-company.png");
+            height: 100vh;
+            background: url("../img/backdrop-the-company.png") no-repeat center center fixed;
+            background-size: cover;
           }
         }
       }
     }
 
-    /*BACKGROUND DA ATIVIDADE*/
-    .field__label{
-      display: none;
-    }
-    #node-3{
-      //background-image: url("../img/backdrop-the-company.png");
-      height: 100vh;
-      background: url("../img/backdrop-the-company.png") no-repeat center center fixed;
-      background-size: cover;
-    }
-    #node-1{
-      //background-image:url("../img/backdrop.png");
-      height: 100vh;
-      background: url("../img/backdrop.png") no-repeat center center fixed;
-      background-size: cover;
-    }
 
     
 
@@ -118,9 +147,6 @@ div {
       .field__item{
         color: #ffffff;
         font-size: 2vw;
-        padding: 10px;
-        padding-top: 5%;
-        background-color: rgba(0,0,0,0.4);
 
         strong {
           border-bottom: 1px solid white;
@@ -235,13 +261,13 @@ div {
                 
                 
                 .menu-item {
-                  $menuItemHeight: calc(100% / 6);
-                  height: $menuItemHeight;
-                  vertical-align: middle;
-                  line-height: 66.6px;
-                  padding: 0 30%;
-
+                  
                   a {
+                    $menuItemHeight: calc(100% / 6);
+                    height: $menuItemHeight;
+                    vertical-align: middle;
+                    line-height: 66.6px;
+                    padding: 0 30%;
                     color: white;
                     text-decoration: none;
                     height: 100%;

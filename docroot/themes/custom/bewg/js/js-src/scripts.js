@@ -15,6 +15,8 @@
         }   
     })
 
+    //Abrir submenu debaixo do menu-item
+    
     // var menuitemCounter=document.getElementsByClassName("menu-item");
 
     // $("#block-mainnavigation ul>.menu-item")
