@@ -51,16 +51,19 @@ function bewg_preprocess_page(&$variables) {
   //   '#url' => Url::fromRoute('<front>'),
   // ];
   // $variables["background_url"] = "";
+    
+    if(isset($variables["node"]) && $variables["node"]->getType() == "page"){
+      $targetId = $variables["node"]->field_background_image->target_id;
+      $mediaEntity = Media::load($targetId);
+      $fileEntity = File::load($mediaEntity->field_image->target_id);
+      $variables["background_url"] = $fileEntity->createFileUrl();
 
+    }else{
+      $variables["background_url"] = "";
+    }
   
 
-  @$targetId = $variables["node"]->field_background_image->target_id;
-  @$mediaEntity = Media::load($targetId);
-  @$fileEntity = File::load($mediaEntity->field_image->target_id);
-  
-  $variables["background_url"] = $fileEntity->createFileUrl();
 
-  
 }
 
 /**
