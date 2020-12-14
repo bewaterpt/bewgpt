@@ -52,18 +52,16 @@ function bewg_preprocess_page(&$variables) {
   // ];
   // $variables["background_url"] = "";
     
-    if(isset($variables["node"]) && $variables["node"]->getType() == "page"){
-      $targetId = $variables["node"]->field_background_image->target_id;
-      $mediaEntity = Media::load($targetId);
-      $fileEntity = File::load($mediaEntity->field_image->target_id);
-      $variables["background_url"] = $fileEntity->createFileUrl();
+  if(isset($variables["node"]) && $variables["node"]->getType() == "page"){
+    $targetId = $variables["node"]->field_background_image->target_id;
+    $mediaEntity = Media::load($targetId);
+    $fileEntity = File::load($mediaEntity->field_image->target_id);
+    $variables["background_url"] = $fileEntity->createFileUrl();
 
-    }else{
-      $variables["background_url"] = "";
-    }
+  }else{
+    $variables["background_url"] = "http://bewgpt.dd:8083/sites/bewgpt.dd/files/2020-12/backdrop-about-us.png";
+  }
   
-
-
 }
 
 /**
