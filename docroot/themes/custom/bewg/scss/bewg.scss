@@ -57,14 +57,15 @@ div {
     position: absolute;
     width: 100%;
     height: calc(100% - 80px);
+    overflow: hidden;
 
     #content {
-      // background: url("../img/backdrop.png") no-repeat center center fixed;
-      // background-size: cover;
+      height: 100%;
+      overflow-y: scroll;
 
       #block-bewg-content {
         height: 100vh;
-  
+
         article {
           
           .field--name-field-basic-page-paragraphs {
@@ -75,8 +76,8 @@ div {
 
             .field__item {
               width:100%;
-              // overflow: hidden;
               word-break: break-all;
+
               .paragraph {
                 
                 .field--name-field-text {
@@ -137,22 +138,53 @@ div {
           background-color: transparent!important;
 
           tr {
-            background-color: rgba(0,0,0,0.6);
+            background-color:#ffffff;
             margin: 5% 5% 5% 5%;
             width: 90%;
             
             .seo-title {
               padding: 10px!important;
               vertical-align: baseline;
-              color: white;
+              color: #666666;
               font-size: 1.2em;
               border: none!important;
 
+              .seo_title_text {
+                background-image: linear-gradient(90deg, #10a6a6, #3c6ba8);
+                color: white;
+                width: 100%;
+                padding: 10px;
+
+              }
               .paragraph {
                 text-align: left!important;
-                color: white;
-                font-size: 0.8em!important;
+                color: #666666;
+                font-size: 0.9em!important;
+                word-break: break-all;
+                display: inline-block;
+                width: 58%;
+                float:left;
 
+                div {
+                  float: none;
+                  width: 100%;
+
+                  h2,h3,h4,h5,h6 {
+                    padding: 10px;
+                    background-color: #f2f2f2;
+                    
+                  }
+                  p{
+                    padding: 10px;
+                  }
+                }
+
+              }
+              .view_video {
+                width: 40%;
+                float: right;
+                height: 100%;
+               
               }
             }
             .views-image {
@@ -161,6 +193,9 @@ div {
             }
 
           }
+          tr:hover {
+            background-color: rgba(0,0,0,0.6);
+          }
         }
       }
     }
@@ -168,13 +203,21 @@ div {
 
   
     main {
-      display: grid;
-      grid-template-columns: 300px 1fr;
       height: 100%;
       width: 100%;
       padding: 0;
       max-width: unset;
 
+      #sidebar-first {
+
+        position: fixed;
+        width: 300px;
+        z-index: 1;
+      }
+      #content {
+        padding-left: 300px;
+        
+      }
       .block-menu{
         width: 20vw;
       }
@@ -206,7 +249,7 @@ div {
         }
 
         #sidebar-first {
-          background-color: #006BAC;
+          background-image: linear-gradient(180deg, #3c6ba8, #10a6a6);
           //position: relative;
           
 
@@ -237,7 +280,7 @@ div {
               .menuDrop {
                 
                 outline: none;
-                background-color: #005E9B;
+                
                 z-index: 1;
               }
               &>.menu-item {
@@ -252,7 +295,9 @@ div {
 
                   overflow: hidden;
                   visibility: hidden;
-                  height: 0;
+                  max-height: 0;
+                  transition: 0.7s;
+
                   @include small {
 
                   }
@@ -260,9 +305,10 @@ div {
                   &.active {
                     visibility: visible;
                     overflow: hidden;
-                    background-color: #005E9B;
                     z-index: 1;
-                    height: fit-content;
+                    max-height: fit-content;
+                    transition: 0.7s;
+
                   }
                   
                   
@@ -279,7 +325,7 @@ div {
 
           #block-mainnavigation {
             
-            background-color: #006BAC;
+            
             width: 100%;
 
             ul {
@@ -306,10 +352,12 @@ div {
                     color: white;
                     text-decoration: none;
                     height: 100%;
+                    transition: 0.5s;
 
                     &:hover {
                         background-color: #005E9B;
                         cursor: pointer;
+                        transition: 0.5s;
                     }
                   }
                 }
