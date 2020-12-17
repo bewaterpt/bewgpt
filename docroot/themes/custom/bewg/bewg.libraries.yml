@@ -6,6 +6,17 @@ global-styling:
 global-scripts:
   dependencies:
     - core/jquery
+    - bewg/slick
   version: VERSION
   js:
     js/scripts.js: {}
+slick:
+  version: VERSION
+  header: true
+  css:
+    theme:
+      js/slick/slick.css: {}
+  js:
+    js/slick/slick.min.js: {}
+  dependencies:
+    - core/jquery

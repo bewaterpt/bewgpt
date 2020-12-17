@@ -75,6 +75,14 @@
 */
 #}
 <article id="node-{{ node.id }}" class="{{ attributes.class }}"{{ attributes }}>
+  {% if is_front %}
+    <div id="caroussel" class="caroussel">
+      {% for item in caroussel_items %}
+        <img class="caroussel-item" src="{{ item }}">
+      {% endfor %}
+    </div>
+  {% endif %}
+
   {{ title_prefix }}
   {% if not page %}
     <h2{{ title_attributes }}><a href="{{ url }}" rel="bookmark">{{ label }}</a></h2>

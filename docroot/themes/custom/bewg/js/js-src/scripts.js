@@ -8,9 +8,17 @@
             event.preventDefault();
             $(event.currentTarget).toggleClass("menuDrop");
             $(event.currentTarget).find(".menu").toggleClass("active");
-                
+               
         }   
-    })
+    });
+
+    $("#menuBar_btn").on("click",function(){
+        $("#sidebar-first").toggleClass("sidebar_inactive");
+        $("#content").toggleClass("content_active");
+        $(".menuBar_btn").toggleClass("menuBar_btn_active");
+    });
+
+    $('#caroussel').slick();
 
 })(jQuery)
 

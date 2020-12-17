@@ -47,6 +47,8 @@
 @import "components/flexbox";
 @import "components/footer";
 
+@import "animations/animations";
+
 div {
 
   #block-views-block-teste-block-1 {
@@ -173,7 +175,7 @@ div {
                     padding: 10px;
                     background-color: #f2f2f2;
                     margin: 0!important;
-                    
+
                   }
                   p{
                     padding: 10px;
@@ -181,7 +183,6 @@ div {
 
                   }
                 }
-
               }
               .view_video {
                 width: 40%;
@@ -203,23 +204,64 @@ div {
       }
     }
     
-
-  
     main {
       height: 100%;
       width: 100%;
       padding: 0;
       max-width: unset;
 
-      #sidebar-first {
-
+      .menuBar_btn {
         position: fixed;
-        width: 300px;
+        width: 24px;
+        height: 24px;
+        z-index: 99;
+        background-image: url("../img/double_arrow_right.png");
+        background-size: cover;
+        // filter: invert(1)
+        // transform: rotate(-90deg);
+        top: calc(50% - 25px);
+        transition: 0.5s;
+        transition: margin-left .5s;
+        --webkit-animation: backward 1.2s infinite alternate-reverse;
+        animation: backward 1.2s infinite alternate-reverse;
+
+      }
+      .menuBar_btn:hover {
+        cursor: pointer;
+
+      }
+      .menuBar_btn_active {
+        transition: 0.5s;
+        transform:rotate(90deg);
+      }
+      #sidebar-first {
+        position: fixed;
+        width: 0px;
         z-index: 1;
+        overflow: hidden;
+        transition-property: width;
+        transition-duration: 0.5s;
+ 
+      }
+      .sidebar_inactive {
+        width: 300px!important;
+        transition-property: width;
+        transition-duration: 0.5s;
+        overflow: hidden;
+
+        div{
+          
+        }
       }
       #content {
-        padding-left: 300px;
-        
+        padding-left: 0px;
+        transition: 0.5s;
+
+      }
+      .content_active {
+        padding-left: 300px!important;
+        transition: 0.5s;
+
       }
       .block-menu{
         width: 20vw;
@@ -258,7 +300,7 @@ div {
           
           &>div {
             height: 100vh;
-
+            min-width: 300px;
           }
 
           #block-bewg-branding {
@@ -273,6 +315,10 @@ div {
               max-width: 201px;
               z-index: 1000;
 
+              img {
+                max-width: 300px;
+              }
+              
             }
           }
 
@@ -284,42 +330,31 @@ div {
               .menuDrop {
                 outline: none;
                 z-index: 1;
+                transition: 0.5s;
 
               }
               &>.menu-item {
 
-                a{
-                  width: 100%;
-                  display: inline-block;
-                  outline:none;
-                }
-
                 ul {
-
                   overflow: hidden;
                   visibility: hidden;
                   max-height: 0;
-                  transition: 0.7s;
-
-                  @include small {
-
-                  }
+                  height: fit-content;
+                  transition: max-height 0.5s ease-in;
 
                   &.active {
                     visibility: visible;
                     overflow: hidden;
-                    z-index: 1;
                     max-height: fit-content;
-                    transition: 0.7s;
+                    transition: max-height 0.5s ease-in;
 
                   }
                   
                   
                   &>.menu-item {
                     height: calc(100%/3)!important;
-                    text-indent: 10px;
-
-                    
+                    padding-left: 10px;
+ 
                   }
                 }
               }
@@ -327,8 +362,6 @@ div {
           }
 
           #block-mainnavigation {
-            
-            
             width: 100%;
 
             ul {
@@ -336,7 +369,6 @@ div {
               &.menu {
                 width: 100%;
                 margin: auto 0 auto 0;
-                //position: absolute;
                 top: 0;
                 bottom: 0;
                 left: 0;
@@ -347,8 +379,7 @@ div {
                   padding-top: 0!important;
 
                   a {
-                    $menuItemHeight: calc(100% / 6);
-                    height: $menuItemHeight;
+                    height: calc(100% / 6);
                     vertical-align: middle;
                     line-height: 66.6px;
                     padding: 0 30%;
@@ -356,6 +387,14 @@ div {
                     text-decoration: none;
                     height: 100%;
                     transition: 0.5s;
+                    width: 100%;
+                    display: inline-block;
+                    outline:none;
+
+                    @include mediumHeight {
+                      height: 40px;
+                      line-height: 40px;
+                    }
 
                     &:hover {
                         background-color: #005E9B;

@@ -9,3 +9,9 @@
     @content;
   }
 }
+
+@mixin mediumHeight {
+  @media screen and (max-height: 800px){
+    @content;
+  }
+}

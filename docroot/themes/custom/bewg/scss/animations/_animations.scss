@@ -1,0 +1,53 @@
+@keyframes forward {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(20px);
+    }
+}
+
+@-webkit-keyframes forward {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(20px);
+    }
+}
+
+@keyframes backward {
+    from {
+        transform: translateX(20px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@-webkit-keyframes backward {
+    from {
+        transform: translateX(20px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@-moz-keyframes teste {
+    0% { margin-left: 10px; }
+    20% { margin-left: 15px; }
+    45% { margin-left: 20px; }
+    50% { margin-left: 40px; }
+    80% { margin-left: 20px; }
+    100% { margin-left: 10px; }
+}
+
+@-o-keyframes teste {
+    0% { margin-left: 10px; }
+    20% { margin-left: 15px; }
+    45% { margin-left: 20px; }
+    50% { margin-left: 40px; }
+    80% { margin-left: 20px; }
+    100% { margin-left: 10px; }
+}
