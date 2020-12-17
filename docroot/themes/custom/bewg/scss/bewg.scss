@@ -66,7 +66,7 @@ div {
       overflow-y: scroll;
 
       #block-bewg-content {
-        height: 100vh;
+        height: fit-content;
 
         article {
           
@@ -125,6 +125,44 @@ div {
             background-size: cover;
           }
         }
+       
+        .field--name-webform {
+          width: 80%;
+          margin: 0 auto;
+          background-color: rgba(255,255,255,0.85);
+          padding: 20px;
+          margin-top: 5%;
+
+          form>div {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+
+            .webform-button--submit {
+              margin-top: 5%;
+
+            }
+          }
+        }
+      }
+      #block-webform {
+        width: 80%;
+        margin: 0 auto;
+        background-color: rgba(255,255,255,0.85);
+        padding: 20px;
+        margin-top: 5%;
+
+        form>div {
+          width: 50%;
+          margin: 0 auto;
+          text-align: center;
+
+          .webform-button--submit {
+            margin-top: 5%;
+
+          }
+        }
+        
       }
     }
 
@@ -212,32 +250,30 @@ div {
 
       .menuBar_btn {
         position: fixed;
-        width: 24px;
-        height: 24px;
-        z-index: 99;
+        width: 30px;
+        height: 30px;
+        z-index: 4;
         background-image: url("../img/double_arrow_right.png");
         background-size: cover;
         // filter: invert(1)
-        // transform: rotate(-90deg);
         top: calc(50% - 25px);
-        transition: 0.5s;
         transition: margin-left .5s;
         --webkit-animation: backward 1.2s infinite alternate-reverse;
         animation: backward 1.2s infinite alternate-reverse;
-
+        
       }
       .menuBar_btn:hover {
         cursor: pointer;
 
       }
       .menuBar_btn_active {
+        
         transition: 0.5s;
-        transform:rotate(90deg);
       }
       #sidebar-first {
         position: fixed;
         width: 0px;
-        z-index: 1;
+        z-index: 5;
         overflow: hidden;
         transition-property: width;
         transition-duration: 0.5s;
@@ -386,7 +422,7 @@ div {
                     color: white;
                     text-decoration: none;
                     height: 100%;
-                    transition: 0.5s;
+                    transition: 0.2s;
                     width: 100%;
                     display: inline-block;
                     outline:none;
@@ -399,7 +435,7 @@ div {
                     &:hover {
                         background-color: #005E9B;
                         cursor: pointer;
-                        transition: 0.5s;
+                        transition: 0.2s;
                     }
                   }
                 }

@@ -87,6 +87,8 @@ function bewg_preprocess_node(&$variables) {
   }
 }
 
+
+
 function bewg_preprocess_node__page(&$variables) {
  
 
