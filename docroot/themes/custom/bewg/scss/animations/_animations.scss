@@ -34,6 +34,41 @@
     }
 }
 
+//--------------------------------------
+@keyframes downward {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}
+@-webkit-keyframes downward {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}
+@keyframes upward {
+    from {
+        transform: translateY(20px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+@-webkit-keyframes upward {
+    from {
+        transform: translateY(20px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+//---------------------------------------
+
 @-moz-keyframes teste {
     0% { margin-left: 10px; }
     20% { margin-left: 15px; }
@@ -51,3 +86,4 @@
     80% { margin-left: 20px; }
     100% { margin-left: 10px; }
 }
+

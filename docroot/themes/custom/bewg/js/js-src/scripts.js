@@ -26,12 +26,31 @@
             container.removeClass("sidebar_inactive");
             $("#content").removeClass("content_active");
             $(".menuBar_btn").removeClass("menuBar_btn_active");
-           
-        }
+            e.preventDefault();
+        }   
+        
     });
 
+    //caroussel first_page
+    $('#caroussel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 5000,
+        dots: false,
+        prevArrow: false,
+        nextArrow: false
+      });
 
-    $('#caroussel').slick();
+      //botao de dar close e abrir footer front_page
+      $("#footer_close").on("click",function(event){
+        $("#footer_close").toggleClass("footer_open");
+        $('#block-views-block-frontpage-footer-block-1').toggleClass('views-frontpage-footer-closed');
+
+      })
 
 })(jQuery)
 

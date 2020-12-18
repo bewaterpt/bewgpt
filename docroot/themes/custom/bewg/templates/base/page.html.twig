@@ -37,12 +37,16 @@
 
     {% if page.sidebar %}
       <aside id="sidebar-first" role="complementary" class="sidebar">
-      
         {{ page.sidebar }}
       </aside>
     {% endif %}
     
     <section id="content" style="background-image: url({{ background_url }}); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;" >
+    {% if is_front %}
+      <div id="footer_close" class="footer_close">
+      
+      </div>
+    {% endif %}
       {{ page.content }}
     </section>
   

@@ -49,10 +49,15 @@
 
 @import "animations/animations";
 
+//google font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 div {
+  font-family: 'Roboto', sans-serif;
 
   #block-views-block-teste-block-1 {
-    margin: auto; 
+    margin: auto;
+
   }
 
   .page {
@@ -65,67 +70,116 @@ div {
       height: 100%;
       overflow-y: scroll;
 
+      .footer_close {
+        background-image: url("../img/double_arrow_down.png");
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        bottom: 20%;
+        right: 50px;
+        z-index: 10;
+        transition: 0.5s;
+        filter: invert(1);
+        background-size: cover;
+        --webkit-animation: downward 1.2s infinite alternate-reverse;
+        animation: downward 1.2s infinite alternate-reverse;
+
+      }
+
+      .footer_open {
+        bottom: 30px;
+        transition: 0.5s;
+        transform: rotate(180deg)!important;
+        background-image: url("../img/double_arrow_up.png");
+
+      }
+      .footer_close:hover {
+        cursor: pointer;
+        
+      }
       #block-bewg-content {
         height: fit-content;
 
         article {
           
           .field--name-field-basic-page-paragraphs {
-            margin:0px 80px 30px 80px;
             max-height: 80vh;
             overflow-y: hidden;
             text-align: left;
+            position: relative;
+            z-index: 1;
 
             .field__item {
-              width:100%;
+              width: 100%;
               word-break: break-all;
 
               .paragraph {
-                
+
                 .field--name-field-text {
+                  width: 80%;
+                  margin: 0 10% 5% 10%;
                   color: white;
-                  margin-top: 20px; 
+                  margin-top: 5%; 
                   padding: 10px;
                   padding-top: 1%;
-                  background-color: rgba(0,0,0,0.6);
+                  background-color: rgba(0,0,0,0.8);
                   max-height: 350px;
-                  overflow-y: scroll;
+                  overflow-y: hidden;
+
                 }
 
                 ::-webkit-scrollbar {
                   width: 10px;
+
                 }
                 /* Track */
                 ::-webkit-scrollbar-track {
-                  background: #f1f1f1; 
+                  background: #f1f1f1;
+
                 }
                 
                 /* Handle */
                 ::-webkit-scrollbar-thumb {
-                  background: #888; 
+                  background: #888;
+
                 }
 
                 /* Handle on hover */
                 ::-webkit-scrollbar-thumb:hover {
-                  background: #555; 
+                  background: #555;
+
                 }
               }
             }
           }
+          .paragraph--type--image {
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+
+          }
   
           #node-1{
-            //background-image:url("../img/backdrop.png");
-            
-          }
-    
+
+          }    
           #node-3{
-            //background-image: url("../img/backdrop-the-company.png");
             height: 100vh;
             background: url("../img/backdrop-the-company.png") no-repeat center center fixed;
             background-size: cover;
+
           }
         }
-       
+        #caroussel {
+          z-index: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          overflow: hidden;
+          background-color: rgba(0,0,0,0.6);
+
+        }
         .field--name-webform {
           width: 80%;
           margin: 0 auto;
@@ -136,12 +190,16 @@ div {
           form>div {
             width: 50%;
             margin: 0 auto;
-            text-align: center;
+            text-align: left;
 
             .webform-button--submit {
               margin-top: 5%;
 
             }
+          }
+          .form-actions {
+            text-align: center;
+
           }
         }
       }
@@ -155,14 +213,74 @@ div {
         form>div {
           width: 50%;
           margin: 0 auto;
-          text-align: center;
+          text-align: left;
 
           .webform-button--submit {
             margin-top: 5%;
 
           }
         }
+        .form-actions {
+          text-align: center;
+
+        }
         
+      }
+      #block-views-block-frontpage-footer-block-1 {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        z-index: 2;
+        padding: 10px;
+        background-color: rgba(60, 107, 168,0.8);
+        transition: 0.5s;
+        height: 150px;
+
+        div {
+          
+          .view {
+            
+            .view-content {
+              
+              table {
+                  margin: 0 25% 0 25%;
+                  width: 50%;
+                  border-left: 0.8px solid white;
+                  height: 90%;
+                  border-spacing: 0!important;
+                  color: white;
+                  background-color: transparent;
+
+                  tbody {
+                    border: none;
+                    tr {
+                      background-color: transparent;
+                      border: none;
+                      
+                      td {
+                        border: none!important;
+
+                        a {
+                          color: inherit;
+                        }
+                      }
+                      tr:hover {
+                        background-color:transparent;
+                      }
+                    }
+                  }
+                }
+              }
+          }
+        }
+      }
+      .views-frontpage-footer-closed {
+        height: 0!important;
+        padding: 0!important;
+        overflow: hidden;
+        transition: 0.5s;
       }
     }
 
@@ -173,9 +291,11 @@ div {
         width: 80%;
         margin: 2% 10% 5% 10%;
         border-spacing: 0 25px;
+        transition: 0.5s;
 
         tbody {
           background-color: transparent!important;
+          transition: 0.5s;
 
           tr {
             background-color:#ffffff;
@@ -285,9 +405,6 @@ div {
         transition-duration: 0.5s;
         overflow: hidden;
 
-        div{
-          
-        }
       }
       #content {
         padding-left: 0px;
@@ -301,6 +418,7 @@ div {
       }
       .block-menu{
         width: 20vw;
+
       }
       
     /*TEXTO DA ATIVIDADE*/
@@ -337,6 +455,7 @@ div {
           &>div {
             height: 100vh;
             min-width: 300px;
+
           }
 
           #block-bewg-branding {
@@ -353,14 +472,14 @@ div {
 
               img {
                 max-width: 300px;
+
               }
               
             }
           }
-
           #block-mainnavigation {
 
-            ul {
+            ul {//menu
 
               //position: absolute;
               .menuDrop {
@@ -385,11 +504,15 @@ div {
                     transition: max-height 0.5s ease-in;
 
                   }
-                  
-                  
                   &>.menu-item {
                     height: calc(100%/3)!important;
-                    padding-left: 10px;
+                    
+
+                    a {
+                      padding-left: 40%;
+                      font-size: 0.8vw;
+                      word-spacing: 0px;
+                    }
  
                   }
                 }
@@ -410,7 +533,6 @@ div {
                 left: 0;
                 right: 0;
                 
-                
                 .menu-item {
                   padding-top: 0!important;
 
@@ -418,7 +540,7 @@ div {
                     height: calc(100% / 6);
                     vertical-align: middle;
                     line-height: 66.6px;
-                    padding: 0 30%;
+                    padding: 0 0 0 30%;
                     color: white;
                     text-decoration: none;
                     height: 100%;
@@ -430,12 +552,14 @@ div {
                     @include mediumHeight {
                       height: 40px;
                       line-height: 40px;
+
                     }
 
                     &:hover {
-                        background-color: #005E9B;
-                        cursor: pointer;
-                        transition: 0.2s;
+                      background-color: #005E9B;
+                      cursor: pointer;
+                      transition: 0.2s;
+
                     }
                   }
                 }
