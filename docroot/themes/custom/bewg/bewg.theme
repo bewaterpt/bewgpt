@@ -60,7 +60,7 @@ function bewg_preprocess_page(&$variables) {
     $variables["background_url"] = $fileEntity->createFileUrl();
 
   }else{
-    $variables["background_url"] = "http://bewgpt.dd:8083/sites/bewgpt.dd/files/2020-12/backdrop-about-us.png";
+    $variables["background_url"] = "http://bewgpt.dd:8083/sites/bewgpt.dd/files/2020-12/bg-news.jpg";
   }
   
 }

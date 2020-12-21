@@ -75,7 +75,7 @@ div {
         width: 40px;
         height: 40px;
         position: absolute;
-        bottom: 20%;
+        bottom: 160px;
         right: 50px;
         z-index: 10;
         transition: 0.5s;
@@ -85,7 +85,12 @@ div {
         animation: downward 1.2s infinite alternate-reverse;
 
       }
-
+      //ATIVIDADE BOX
+      .atividade-box-layout {
+        height: fit-content;
+        padding: 20px;
+        
+      }
       .footer_open {
         bottom: 30px;
         transition: 0.5s;
@@ -118,14 +123,25 @@ div {
                 .field--name-field-text {
                   width: 80%;
                   margin: 0 10% 5% 10%;
-                  color: white;
+                  color: #666666;
                   margin-top: 5%; 
-                  padding: 10px;
+                  padding: 20px;
                   padding-top: 1%;
-                  background-color: rgba(0,0,0,0.8);
+                  background-color: rgba(255,255,255,0.85);
                   max-height: 350px;
                   overflow-y: hidden;
+                  height: fit-content;
 
+                  h2,h3,h4,h5,h6 {
+                    padding: 10px;
+                    background-image:linear-gradient(90deg, #10a6a6, #3c6ba8);
+                    margin: 0!important;
+                    text-align: center;
+                    color: white;
+                  }
+                  p {
+                    margin-top: 10px;
+                  }
                 }
 
                 ::-webkit-scrollbar {
@@ -208,7 +224,7 @@ div {
         margin: 0 auto;
         background-color: rgba(255,255,255,0.85);
         padding: 20px;
-        margin-top: 5%;
+        margin-top: 10px;
 
         form>div {
           width: 50%;
@@ -236,7 +252,7 @@ div {
         padding: 10px;
         background-color: rgba(60, 107, 168,0.8);
         transition: 0.5s;
-        height: 150px;
+        height: 140px;
 
         div {
           
@@ -258,7 +274,8 @@ div {
                     tr {
                       background-color: transparent;
                       border: none;
-                      
+                      font-size: 0.8em;
+
                       td {
                         border: none!important;
 
@@ -387,8 +404,8 @@ div {
 
       }
       .menuBar_btn_active {
-        
         transition: 0.5s;
+
       }
       #sidebar-first {
         position: fixed;
