@@ -20,7 +20,6 @@
 
     $(document).mouseup(function(e){
         var container = $("#sidebar-first");
-        console.log("entrei");
         // If the target of the click isn't the container
         if(!container.is(e.target) && container.has(e.target).length === 0 && container.width()>0){
             container.removeClass("sidebar_inactive");
@@ -51,6 +50,13 @@
         $('#block-views-block-frontpage-footer-block-1').toggleClass('views-frontpage-footer-closed');
 
       })
+
+      //click na Atividade Box
+      $('.atividade-box-layout').click(function(){
+          console.log("funca");
+          $('.views-field-title span>a').click();
+      })
+     
 
 })(jQuery)
 

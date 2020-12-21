@@ -86,10 +86,60 @@ div {
 
       }
       //ATIVIDADE BOX
-      .atividade-box-layout {
-        height: fit-content;
-        padding: 20px;
+      .views-row {
+        margin: 5%;
         
+        .atividade-box-layout {
+          height: 250px;
+          overflow: hidden;
+          position: relative;
+          color: white;
+          margin-right: 20px;
+  
+          .views-field-title {
+            position: absolute;
+            height: 250px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 250px;
+            width: 100%;
+            background-image: url('../img/agua.png');
+            z-index: 10;
+            transition: height 0.5s;
+
+            a {
+              color: inherit;
+            }
+          }
+          
+          .views-field-field-teaser-media {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            span {
+  
+              img {
+                height: 100%;
+                width: 100%;
+                transform: scale(1);
+                transition: 0.5s;
+              }
+            }
+          }
+        }.atividade-box-layout:hover .views-field-title{
+          height: 50px;
+          transition: 0.5s;
+          line-height: 50px;
+          
+        }
+        .atividade-box-layout:hover {
+          cursor: pointer;
+        }
+        .atividade-box-layout:hover .views-field-field-teaser-media>span>img {
+          transform: scale(1.5);
+          transition: 0.5s;
+        } 
       }
       .footer_open {
         bottom: 30px;
