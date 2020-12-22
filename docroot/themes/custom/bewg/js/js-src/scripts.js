@@ -52,9 +52,9 @@
       })
 
       //click na Atividade Box
-      $('.atividade-box-layout').click(function(){
+      $('.atividade-box-layout').click(function(event){
           console.log("funca");
-          $('.views-field-title span>a').click();
+          window.location = $(this).find("a").first().attr("href");
       })
      
 
