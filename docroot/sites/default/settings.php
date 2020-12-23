@@ -710,7 +710,7 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  */
 
 $settings['trusted_host_patterns'] = [
-  '^ourem-bewater\.com\.pt$',
+  '^192.168.21.13$',
   '^bewgpt\.dd',
 ];
 
