@@ -23,17 +23,17 @@
         var container = $("#sidebar-first");
         var checkMenuItem = false;
         var menuItemArray = (e.target.parentNode.className.split(/\s+/));
-        console.log(menuItemArray);
+
         for(var i=0;i<menuItemArray.length; i++){
-            console.log("entrou");
             if(menuItemArray[i]=="menu-item"){
                 console.log(i);
                 checkMenuItem = true;
             }
         }
+
+
         // If the target of the click isn't the container
-        if(!container.is(e.target) && container.width()>0 && e.target.parentNode.classList != "menu-item"){
-            console.log(e.target.parentNode.classList);
+        if(!container.is(e.target) && container.width()>0 && checkMenuItem!=true){
             $("#sidebar-first").toggleClass("sidebar_inactive");
             $("#content").toggleClass("content_active");
             $(".menuBar_btn").toggleClass("menuBar_btn_active");
