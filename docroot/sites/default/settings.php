@@ -710,7 +710,7 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  */
 
 $settings['trusted_host_patterns'] = [
-  '^ourem-bewater\.com\.pt$',
+  '^192.168.21.13$',
   '^bewgpt\.dd',
 ];
 
@@ -778,16 +778,7 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
    include $app_root . '/' . $site_path . '/settings.local.php';
 }
-$databases['default']['default'] = array (
-  'database' => 'bewgpt_site',
-  'username' => 'bewgpt',
-  'password' => 'bewgpt',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
+
 $settings['config_sync_directory'] = 'sites/default/files/config_58k6uMonRM9gWsAUPLfOOx5-ZXhtxc-bi0twU6S_zCOQEIm7mqnrLp4n_nJBNV-py3hrUlGDZw/sync';
 $config['system.logging']['error_level'] = 'verbose';
 
