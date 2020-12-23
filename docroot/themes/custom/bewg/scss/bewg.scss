@@ -63,7 +63,7 @@ div {
   .page {
     position: absolute;
     width: 100%;
-    height: calc(100% - 80px);
+    height: 100%;
     overflow: hidden;
 
     #content {
@@ -277,7 +277,7 @@ div {
           }
           .shariff {
             display: none;
-            
+
           }
           .field--name-field-text-atividade {
             width: 70%;
