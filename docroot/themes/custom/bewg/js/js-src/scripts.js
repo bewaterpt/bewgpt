@@ -13,18 +13,30 @@
     });
     //botao do menu abrir
     $("#menuBar_btn").on("click",function(){
-        $("#sidebar-first").toggleClass("sidebar_inactive");
-        $("#content").toggleClass("content_active");
-        $(".menuBar_btn").toggleClass("menuBar_btn_active");
+        var container = $("#sidebar-first");
+        container.removeClass("sidebar_inactive");
+        $("#content").removeClass("content_active");
+        $(".menuBar_btn").removeClass("menuBar_btn_active");
     });
 
     $(document).mouseup(function(e){
         var container = $("#sidebar-first");
+        var checkMenuItem = false;
+        var menuItemArray = (e.target.parentNode.className.split(/\s+/));
+        console.log(menuItemArray);
+        for(var i=0;i<menuItemArray.length; i++){
+            console.log("entrou");
+            if(menuItemArray[i]=="menu-item"){
+                console.log(i);
+                checkMenuItem = true;
+            }
+        }
         // If the target of the click isn't the container
-        if(!container.is(e.target) && container.has(e.target).length === 0 && container.width()>0){
-            container.removeClass("sidebar_inactive");
-            $("#content").removeClass("content_active");
-            $(".menuBar_btn").removeClass("menuBar_btn_active");
+        if(!container.is(e.target) && container.width()>0 && e.target.parentNode.classList != "menu-item"){
+            console.log(e.target.parentNode.classList);
+            $("#sidebar-first").toggleClass("sidebar_inactive");
+            $("#content").toggleClass("content_active");
+            $(".menuBar_btn").toggleClass("menuBar_btn_active");
             e.preventDefault();
         }   
         
@@ -56,6 +68,12 @@
           console.log("funca");
           window.location = $(this).find("a").first().attr("href");
       })
+
+      //click na sustentabilidade box
+      $('.sustentabilidade-column').click(function(event){
+        console.log("funca");
+        window.location = $(this).find("a").first().attr("href");
+    })
      
 
 })(jQuery)

@@ -91,7 +91,7 @@ div {
         width: 70%;
 
         .atividade-box-layout {
-          height: 300px;
+          height: 30%;
           overflow: hidden;
           position: relative;
           color: white;
@@ -100,10 +100,10 @@ div {
   
           .views-field-title {
             position: absolute;
-            height: 300px;
+            height: 100%;
             text-align: center;
             vertical-align: middle;
-            line-height: 300px;
+            line-height: 360px;
             width: 100%;
             background-image: url('../img/agua.png');
             z-index: 10;
@@ -165,10 +165,10 @@ div {
           
           .field--name-field-basic-page-paragraphs {
             max-height: 80vh;
-            overflow-y: hidden;
             text-align: left;
             position: relative;
             z-index: 1;
+            margin-bottom: 20px;
 
             .field__item {
               width: 100%;
@@ -177,14 +177,13 @@ div {
               .paragraph {
 
                 .field--name-field-text {
-                  width: 80%;
-                  margin: 0 10% 5% 10%;
+                  width: 60%;
+                  margin: 0 20% 5% 20%;
                   color: #666666;
                   margin-top: 5%; 
                   padding: 20px;
                   padding-top: 1%;
                   background-color: rgba(255,255,255,0.85);
-                  max-height: 350px;
                   overflow-y: hidden;
                   height: fit-content;
 
@@ -226,8 +225,9 @@ div {
           }
           .paragraph--type--image {
             margin-top: 20px;
-            width: 200px;
-            height: 200px;
+            width: 50%;
+            margin: 2% 25% 5% 25%;
+            height: auto;
 
           }
           //atividade
@@ -316,8 +316,117 @@ div {
           }
         }
       }
+      //sustentabilidade
+      .views-element-container {
+        .views-row{
+          width: 80%!important;
+          margin: 2% 10% 0 10%!important;
+
+          .sustentabilidade-column {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+            color: white;
+            margin: 20px;
+            width: calc(33.33% - 40px)!important;
+    
+            .views-field-title {
+              position: absolute;
+              height: 250px;
+              text-align: center;
+              vertical-align: middle;
+              line-height: 250px;
+              width: 100%;
+              background-image: url('../img/agua.png');
+              z-index: 10;
+              transition:0.5s;
+              font-size: 1.5em;
+  
+              a {
+                color: inherit;
+  
+              }
+            }
+            
+            .views-field-field-sustentabilidade-image {
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+  
+              div {
+                height: 100%;
+  
+                img {
+                  height: 100%;
+                  width: 100%;
+                  transform: scale(1);
+                  transition: 0.5s;
+                }
+              }
+            }
+          }
+        }
+        
+
+        .sustentabilidade-column:hover .views-field-title{
+          height: 100px;
+          transition: 0.5s;
+          line-height: 100px;
+          
+        }
+        .sustentabilidade-column:hover {
+          cursor: pointer;
+        }
+        .sustentabilidade-column:hover .views-field-field-sustentabilidade-image>div>img {
+          transform: scale(1.5);
+          transition: 0.5s;
+        }
+      }
+
+      //sustentabilidade
+      .field--name-field-sustentabilidade-image {
+
+        .field__label{
+          display: none;
+
+        }
+        .field__item {
+          
+          img {
+            width: 50%;
+            height: auto;
+            margin: 20px 25% 2% 25%;
+
+          }
+        }
+      }
+      .field--name-field-sustentabilidade-paragraph {
+        width: 70%;
+        margin: 20px 15% 20px 15%;
+        background-color: rgba(255,255,255,0.85);
+        padding: 20px;
+
+        .field__label {
+          display: none;
+
+        }
+        .field__items {
+          color:#666666;
+          .field__item {
+
+            margin-bottom: 10px;
+          }
+          h2,h3,h4,h5,h6 {
+            padding: 10px;
+            background-image:linear-gradient(90deg, #10a6a6, #3c6ba8);
+            margin: 0 0 10px 0!important;
+            text-align: center;
+            color: white;
+          }
+        }
+      }
       #block-webform {
-        width: 80%;
+        width: 60%;
         margin: 0 auto;
         background-color: rgba(255,255,255,0.85);
         padding: 20px;
@@ -484,12 +593,12 @@ div {
 
       .menuBar_btn {
         position: fixed;
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         z-index: 4;
         background-image: url("../img/double_arrow_right.png");
         background-size: cover;
-        // filter: invert(1)
+        filter: invert(1);
         top: calc(50% - 25px);
         transition: margin-left .5s;
         --webkit-animation: backward 1.2s infinite alternate-reverse;
@@ -506,7 +615,7 @@ div {
       }
       #sidebar-first {
         position: fixed;
-        width: 0px;
+        width: 300px;
         z-index: 5;
         overflow: hidden;
         transition-property: width;
@@ -514,19 +623,19 @@ div {
  
       }
       .sidebar_inactive {
-        width: 300px!important;
+        width: 0px!important;
         transition-property: width;
         transition-duration: 0.5s;
         overflow: hidden;
 
       }
       #content {
-        padding-left: 0px;
+        padding-left: 300px;
         transition: 0.5s;
 
       }
       .content_active {
-        padding-left: 300px!important;
+        padding-left: 0px!important;
         transition: 0.5s;
 
       }
