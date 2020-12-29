@@ -60,7 +60,14 @@
         console.log("funca");
         window.location = $(this).find("a").first().attr("href");
     })
-     
+
+    //verificação dos items da sustentabilidade
+   if($('.sustentabilidade-column').length % 2 == 1){
+        $('.sustentabilidade-column').last().toggleClass("lastTypeColumn");
+   }else{
+       
+   }
+
 
 })(jQuery)
 

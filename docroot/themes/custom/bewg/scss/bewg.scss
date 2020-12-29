@@ -131,6 +131,7 @@ div {
                   width: 100%;
                   transform: scale(1);
                   transition: 0.5s;
+
                 }
               }
             }
@@ -144,10 +145,12 @@ div {
         }
         .atividade-box-layout:hover {
           cursor: pointer;
+
         }
         .atividade-box-layout:hover .views-field-field-teaser-media>span>img {
           transform: scale(1.5);
           transition: 0.5s;
+
         } 
       }
       .footer_open {
@@ -168,7 +171,6 @@ div {
           position: relative;
 
           .field--name-field-header {
-
             color: white;
             width: 310px;
             font-size: 2em;
@@ -289,6 +291,7 @@ div {
           }
           .field--name-field-tags {
             display: none;
+
           }
           .shariff {
             display: none;
@@ -331,11 +334,33 @@ div {
               min-height: 100vh;
               height: 100%;
               
-
               img {
                 height: 100%;
                 overflow: hidden;
                 object-fit: cover;
+
+              } 
+              
+            }
+          }
+          //img de fundo da pagina da sustentabilidade
+          .field--name-field-sustentabilidade-image {
+            position: static;
+            top: 0;
+            height: 100%;
+            left: 0;
+
+            .field__item {
+              position: fixed;
+              top: 0;
+              min-height: 100vh;
+              height: 100%;
+              
+              img {
+                height: 100%;
+                overflow: hidden;
+                object-fit: cover;
+
               } 
               
             }
@@ -365,14 +390,18 @@ div {
                 .views-row {
 
                   .views-col {
-                    border-bottom:1px solid  rgba(255,255,255,0.85);
+                    border-bottom:1px solid  #ccc;
                     margin-right: 5%;
-                    width: calc(33.33% - 5%)!important;
+                    width: calc(50% - 5%)!important;
+                    position: relative;
 
                     .views-field-field-teaser-media {
+                      width: 220px;
+                      float: left;
 
                       .field-content {
-                        width: 80%;
+                        width: 100%;
+                        margin-right: 20px;
 
                         a {
 
@@ -380,17 +409,31 @@ div {
 
                             height: 150px;
                             width: 200px;
+                            min-width: 200px;
+                            min-height: 150px;
                           }
                         }
                       }
                     }
                     .views-field-title {
-                      color: white;
+                      color: #f2f2f2;
                       span {
                         a {
                           color: inherit;
+                          font-weight: bold;
                         }
+                        
                       }
+                    }
+                    .views-field-field-news {
+                      color: white;
+
+                    }
+                    .views-field-created {
+                      position: static;
+                      color: white;
+                      left: 220px;
+                      bottom: 0;
                     }
                   }
                 }
@@ -439,19 +482,19 @@ div {
           margin: 2% 10% 0 10%!important;
 
           .sustentabilidade-column {
-            height: 250px;
+            height: 350px;
             overflow: hidden;
             position: relative;
             color: white;
             margin: 20px;
-            width: calc(33.33% - 40px)!important;
+            width: calc(50% - 40px)!important;
     
             .views-field-title {
               position: absolute;
-              height: 250px;
+              height: 350px;
               text-align: center;
               vertical-align: middle;
-              line-height: 250px;
+              line-height: 350px;
               width: 100%;
               background-image: url('../img/agua.png');
               z-index: 10;
@@ -481,6 +524,10 @@ div {
               }
             }
           }
+          .lastTypeColumn {
+            margin-left: calc(25% + 20px)!important;
+
+          }
         }
         
 
@@ -500,27 +547,13 @@ div {
       }
 
       //sustentabilidade
-      .field--name-field-sustentabilidade-image {
-
-        .field__label{
-          display: none;
-
-        }
-        .field__item {
-          
-          img {
-            width: 50%;
-            height: auto;
-            margin: 20px 25% 2% 25%;
-
-          }
-        }
-      }
       .field--name-field-sustentabilidade-paragraph {
         width: 70%;
         margin: 20px 15% 20px 15%;
         background-color: rgba(255,255,255,0.85);
         padding: 20px;
+        position: relative;
+        z-index: 2;
 
         .field__label {
           display: none;
