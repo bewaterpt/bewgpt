@@ -377,9 +377,14 @@ div {
             background-size: cover;
 
           }
-          .field--name-field-atividade-img {
-
+          .field--name-field-introducao {
+            display:none;
           }
+          .field--type-geofield {
+            display: none;
+          }
+          
+
         }
         
         // #caroussel {
@@ -416,13 +421,25 @@ div {
           }
         }
       }
+      //MAPA 
+      .block-views-blockmapa-block-1 {
+        width: 500px;
+        margin: 0 auto;
+        margin-bottom: 5%;
+      }
+      //MAPA INTERNACIONAL
+      .block-views-blockmapa-internacional-block-1 {
+        width: 630px;
+        margin: 0 auto;
+        margin-bottom: 5%;
+      }
       //news basic page
       .block-views-blocknews-block-1 {
         div {
           .view-news {
             margin-top: 5%;
             display: block;
-            
+            margin-bottom: 5%;
             .view-content {
 
               .views-row {
@@ -435,7 +452,8 @@ div {
                     position: relative;
 
                     .views-field-field-teaser-media {
-                      width: 220px;
+                      width: 45%;
+                      margin-right: 5%;
                       float: left;
 
                       .field-content {
@@ -445,18 +463,18 @@ div {
                         a {
 
                           img {
-
                             height: 150px;
                             width: 200px;
-                            min-width: 200px;
-                            min-height: 150px;
+
                           }
                         }
                       }
                     }
                     .views-field-title {
                       color: #666666;
-                      background-color: #f2f2f2;
+                      background-color: #ffffff;
+                      margin-bottom: 10px;
+
                       span {
                         a {
                           color: inherit;
@@ -465,16 +483,24 @@ div {
                         
                       }
                     }
-                    .views-field-field-news {
+                    .views-field-field-introducao {
                       color: #666666;
+                      width: 50%;
+                      float:right;
+                      
 
+                      .field-content {
+                        margin-bottom: 30px;
+                        font-size: 0.8em;
+                      }
                     }
                     .views-field-created {
                       position: absolute;
                       color: #666666;
                       margin-top: 5px;
-                      left: 220px;
+                      text-align: right;
                       bottom: 0;
+                      width: 100%;
                     }
                   
                  }
