@@ -68,7 +68,8 @@
        
    }
 
-    
+   //remover o hover do footer
+   $("views-table tbody tr").unbind('mouseenter').unbind('mouseleave');
 
 
 })(jQuery)

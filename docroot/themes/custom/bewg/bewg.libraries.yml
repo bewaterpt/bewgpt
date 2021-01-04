@@ -20,3 +20,5 @@ slick:
     js/slick/slick.min.js: {}
   dependencies:
     - core/jquery
+
+  

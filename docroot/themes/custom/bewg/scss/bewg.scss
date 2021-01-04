@@ -677,6 +677,11 @@ div {
                         background-color:transparent;
                       }
                     }
+                    tr:hover>td{
+
+                      background-color: transparent!important;
+                      text-decoration: underline;
+                    }
                   }
                 }
               }
