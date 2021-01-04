@@ -397,7 +397,7 @@ div {
         //   overflow: hidden;
         //   background-color: rgba(0,0,0,0.6);
         // }
-        
+
         .field--name-webform {
           width: 80%;
           margin: 0 auto;
@@ -951,6 +951,15 @@ div {
                 z-index: 1;
                 transition: 0.5s;
 
+              }
+              .menu-item--active-trail {
+
+                ul {
+                  visibility: visible;
+                  overflow: hidden;
+                  max-height: fit-content;
+                  transition: max-height 0.5s ease-in;
+                }
               }
               &>.menu-item {
                 font-size: calc(10px + 0.5vw);
