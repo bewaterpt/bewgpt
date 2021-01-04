@@ -6,16 +6,35 @@
         //verificar se o elemento tem ul, se tiver da prevent
         if ( $(event.currentTarget).children("ul").length > 0) {
             event.preventDefault();
-            $(event.currentTarget).toggleClass("menuDrop");
-            $(event.currentTarget).find(".menu").toggleClass("active");
-               
+            console.log($(event.currentTarget).hasClass("menuDrop"));
+            if($(event.currentTarget).hasClass("menuDrop")==false && $(event.currentTarget).hasClass("menu-item--active-trail")==false){
+                $(event.currentTarget).find(".subMenu_active").removeClass("subMenu_active");
+                $(event.currentTarget).toggleClass("menuDrop");
+                $(event.currentTarget).find(".menu").toggleClass("active");
+                console.log("entrou if");
+            }
+            else if($(event.currentTarget).hasClass("menu-item--active-trail")==true){
+                $(event.currentTarget).find(".menu").removeClass("active");
+                $(event.currentTarget).removeClass("menuDrop");
+                $(event.currentTarget).find(".menu").removeClass("subMenu_active");
+                $(event.currentTarget).removeClass("menu-item--active-trail");
+                console.log("entrou else if");
+            }
+            else {
+                $(event.currentTarget).find(".menu").removeClass("active");
+                $(event.currentTarget).removeClass("menuDrop");
+                console.log("entrou else");
+            }
+            
         }   
     });
+    //submenu continuar aberto
+    $(".menu-item--active-trail ul").toggleClass("subMenu_active");
     //botao do menu abrir
     $("#menuBar_btn").on("click",function(){
         var container = $("#sidebar-first");
         container.toggleClass("sidebar_inactive");
-        $("#content").removeClass("content_active");
+        $("#content").toggleClass("content_active");
         $(".menu_btn_container").toggleClass("menu_btn_container_active");
        
     });
@@ -30,9 +49,7 @@
                 console.log(i);
                 checkMenuItem = true;
             }
-        }
-         
-        
+        } 
     });
 
       //botao de dar close e abrir footer front_page
@@ -41,6 +58,8 @@
         $('#block-views-block-frontpage-footer-block-1').toggleClass('views-frontpage-footer-closed');
 
       })
+      
+
 
       //click na Atividade Box
       $('.atividade-box-layout').click(function(event){

@@ -960,14 +960,12 @@ div {
                 transition: 0.5s;
 
               }
-              .menu-item--active-trail {
-
-                ul {
-                  visibility: visible;
-                  overflow: hidden;
-                  max-height: fit-content;
-                  transition: max-height 0.5s ease-in;
-                }
+              .subMenu_active {
+                visibility: visible!important;
+                overflow: hidden!important;
+                max-height: fit-content!important;
+                transition: max-height 0.5s;
+                
               }
               &>.menu-item {
                 font-size: calc(10px + 0.5vw);
@@ -977,13 +975,13 @@ div {
                   visibility: hidden;
                   max-height: 0;
                   height: fit-content;
-                  transition: max-height 0.5s ease-in;
+                  transition: max-height 0.5s;
 
                   &.active {
                     visibility: visible;
                     overflow: hidden;
                     max-height: fit-content;
-                    transition: max-height 0.5s ease-in;
+                    transition: max-height 0.5s;
 
                   }
                   &>.menu-item {
