@@ -68,21 +68,24 @@ div {
     #content {
 
       min-height: 100vh;
-
-      .footer_close {
-        background-image: url("../img/double_arrow_down.png");
-        width: 40px;
-        height: 40px;
+      .footer_btn_container {
         position: fixed;
         bottom: 160px;
         right: 50px;
         z-index: 10;
-        transition: 0.5s;
-        filter: invert(1);
-        background-size: cover;
-        --webkit-animation: downward 1.2s infinite alternate-reverse;
-        animation: downward 1.2s infinite alternate-reverse;
+        transform: rotate(0deg);
+        transition: bottom 0.5s;
 
+        .footer_close {
+          background-image: url("../img/double_arrow_down.png");
+          width: 40px;
+          height: 40px;
+          filter: invert(1);
+          background-size: cover;
+          --webkit-animation: downward 1.2s infinite alternate-reverse;
+          animation: downward 1.2s infinite alternate-reverse;
+  
+        }
       }
       //ATIVIDADE BOX
       .views-row {
@@ -155,9 +158,8 @@ div {
       }
       .footer_open {
         bottom: 30px;
-        transition: 0.5s;
         transform: rotate(180deg)!important;
-        background-image: url("../img/double_arrow_up.png");
+        transition: bottom 0.5s;
 
       }
       .footer_close:hover {
@@ -746,6 +748,10 @@ div {
         overflow: hidden;
         transition: 0.5s;
       }
+      .webform-element-description
+      {
+        display: none;
+      }
     }
 
     //views
@@ -834,7 +840,7 @@ div {
 
       .menu_btn_container {
         transform: rotate(180deg);
-        transition: 0.5s;
+        transition: transform 0.5s;
         transition: left 0.5s;
         position: fixed;
         top: calc(50% - 25px);
@@ -858,7 +864,7 @@ div {
       }
       .menu_btn_container_active {
         transform: rotate(0deg);
-        transition: 0.5s;
+        transition: transform 0.5s;
         left: 5px;
         transition: left 0.5s;
       }
@@ -989,11 +995,10 @@ div {
                     
 
                     a {
-                      padding-left: 40%;
+                      padding-left: 35%;
                       font-size: calc(5 px +0.5vw);
                       word-spacing: 0px;
                     }
- 
                   }
                 }
               }
@@ -1015,7 +1020,7 @@ div {
                 
                 .menu-item {
                   padding-top: 0!important;
-
+ 
                   a {
                     height: calc(100% / 6);
                     vertical-align: middle;
@@ -1024,7 +1029,7 @@ div {
                     color: white;
                     text-decoration: none;
                     height: 100%;
-                    transition: 0.2s;
+
                     width: 100%;
                     display: inline-block;
                     outline:none;
