@@ -396,8 +396,8 @@ div {
         //   height: 100%;
         //   overflow: hidden;
         //   background-color: rgba(0,0,0,0.6);
-
         // }
+        
         .field--name-webform {
           width: 80%;
           margin: 0 auto;
@@ -426,6 +426,32 @@ div {
         width: 500px;
         margin: 0 auto;
         margin-bottom: 5%;
+
+        div {
+
+          .view {
+
+            .view-content {
+
+              #leaflet-map-view-mapa-block-1 {
+                border: 1px solid white;
+                
+                .leaflet-control-container {
+
+                  .leaflet-top {
+                    
+                    .leaflet-control-fullscreen {
+                      display: none;
+                    }
+                  }
+                  .leaflet-right {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
       //MAPA INTERNACIONAL
       .block-views-blockmapa-internacional-block-1 {
@@ -441,7 +467,7 @@ div {
 
               #leaflet-map-view-mapa-internacional-block-1 {
                 border: 1px solid white;
-                
+
                 .leaflet-control-container {
 
                   .leaflet-top {
