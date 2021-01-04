@@ -14,9 +14,10 @@
     //botao do menu abrir
     $("#menuBar_btn").on("click",function(){
         var container = $("#sidebar-first");
-        container.removeClass("sidebar_inactive");
+        container.toggleClass("sidebar_inactive");
         $("#content").removeClass("content_active");
-        $(".menuBar_btn").removeClass("menuBar_btn_active");
+        $(".menu_btn_container").toggleClass("menu_btn_container_active");
+       
     });
 
     $(document).mouseup(function(e){
@@ -30,15 +31,7 @@
                 checkMenuItem = true;
             }
         }
-
-
-        // If the target of the click isn't the container
-        if(!container.is(e.target) && container.width()>0 && checkMenuItem!=true){
-            $("#sidebar-first").toggleClass("sidebar_inactive");
-            $("#content").toggleClass("content_active");
-            $(".menuBar_btn").toggleClass("menuBar_btn_active");
-            e.preventDefault();
-        }   
+         
         
     });
 
@@ -64,13 +57,7 @@
     //verificação dos items da sustentabilidade
    if($('.sustentabilidade-column').length % 2 == 1){
         $('.sustentabilidade-column').last().toggleClass("lastTypeColumn");
-   }else{
-       
-   }
-
-   //remover o hover do footer
-   $("views-table tbody tr").unbind('mouseenter').unbind('mouseleave');
-
+   }else{}
 
 })(jQuery)
 

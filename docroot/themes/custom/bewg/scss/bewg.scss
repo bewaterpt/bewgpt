@@ -832,27 +832,35 @@ div {
       padding: 0;
       max-width: unset;
 
-      .menuBar_btn {
-        position: fixed;
-        width: 40px;
-        height: 40px;
-        z-index: 4;
-        background-image: url("../img/double_arrow_right.png");
-        background-size: cover;
-        filter: invert(1);
-        top: calc(50% - 25px);
-        transition: margin-left .5s;
-        --webkit-animation: backward 1.2s infinite alternate-reverse;
-        animation: backward 1.2s infinite alternate-reverse;
-        
-      }
-      .menuBar_btn:hover {
-        cursor: pointer;
-
-      }
-      .menuBar_btn_active {
+      .menu_btn_container {
+        transform: rotate(180deg);
         transition: 0.5s;
+        transition: left 0.5s;
+        position: fixed;
+        top: calc(50% - 25px);
+        z-index: 4;
+        left: 320px;
 
+        .menuBar_btn {
+          width: 40px;
+          height: 40px;
+          background-image: url("../img/double_arrow_right.png");
+          background-size: cover;
+          filter: invert(1);
+          --webkit-animation: backward 1.2s infinite alternate-reverse;
+          animation: backward 1.2s infinite alternate-reverse;
+          
+        }
+        .menuBar_btn:hover {
+          cursor: pointer;
+  
+        }
+      }
+      .menu_btn_container_active {
+        transform: rotate(0deg);
+        transition: 0.5s;
+        left: 5px;
+        transition: left 0.5s;
       }
       #sidebar-first {
         position: fixed;
