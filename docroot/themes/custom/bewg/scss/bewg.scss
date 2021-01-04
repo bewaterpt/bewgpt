@@ -432,6 +432,32 @@ div {
         width: 630px;
         margin: 0 auto;
         margin-bottom: 5%;
+
+        div {
+
+          .view {
+
+            .view-content {
+
+              #leaflet-map-view-mapa-internacional-block-1 {
+                border: 1px solid white;
+                
+                .leaflet-control-container {
+
+                  .leaflet-top {
+                    
+                    .leaflet-control-fullscreen {
+                      display: none;
+                    }
+                  }
+                  .leaflet-right {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
       //news basic page
       .block-views-blocknews-block-1 {
