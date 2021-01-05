@@ -420,20 +420,6 @@ div {
 
 
         }
-<<<<<<< HEAD
-
-        // #caroussel {
-        //   z-index: 0;
-        //   position: absolute;
-        //   top: 0;
-        //   left: 0;
-        //   width: 100%;
-        //   height: 100%;
-        //   overflow: hidden;
-        //   background-color: rgba(0,0,0,0.6);
-        // }
-=======
->>>>>>> 3929838993a11d877747b099051cfc128f244249
 
         .field--name-webform {
           width: 80%;
@@ -573,22 +559,6 @@ div {
                           color: inherit;
                           font-weight: bold;
                         }
-
-                      }
-                    }
-                    .views-field-field-introducao {
-                      color: #666666;
-                      width: 50%;
-                      float: right;
-                      margin-top: 35px;
-                      margin-right: 5%;
-
-
-                      .field-content {
-                        margin-bottom: 30px;
-                        font-size: 0.8em;
-                        padding:10px;
-
                       }
                     }
                   }
@@ -596,10 +566,13 @@ div {
                     color: #666666;
                     width: 50%;
                     float:right;
+                    margin-top: 35px;
+                    margin-right: 5%;
 
                     .field-content {
                       margin-bottom: 30px;
                       font-size: 0.8em;
+                      padding:10px;
                     }
                   }
                   .views-field-created {
@@ -610,6 +583,7 @@ div {
                     bottom: 0;
                     width: 100%;
                     padding: 5% 5% 2% 5%;
+                    
                   }
                 }
               }
