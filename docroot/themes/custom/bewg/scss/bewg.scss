@@ -566,19 +566,12 @@ div {
                       height: 35px;
                       padding: 5px;
 
-<<<<<<< HEAD
-                      a {
-                        color: inherit;
-                        font-weight: bold;
-
-=======
                       span {
 
                         a {
                           color: inherit;
                           font-weight: bold;
                         }
->>>>>>> faa33bc4b12333be34ccc960c0b85bfb7a76080e
                       }
                     }
 
@@ -1005,14 +998,7 @@ div {
             // Menu
             #block-mainnavigation {
 
-<<<<<<< HEAD
-              .menuDrop {
-                outline: none;
-                z-index: 1;
-                transition: 0.5s;
-=======
               ul {
->>>>>>> faa33bc4b12333be34ccc960c0b85bfb7a76080e
 
                 &.menu {
                   width: 100%;
