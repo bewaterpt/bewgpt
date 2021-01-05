@@ -73,7 +73,7 @@ div {
       min-height: 100vh;
 
       #block-languageswitcher {
-        position: absolute;
+        position: fixed;
         right: 10px;
         bottom: 10px;
       }
@@ -192,7 +192,7 @@ div {
               display: none;
             }
             .field__item {
-              
+
               img {
                 height: 100%;
                 min-height: 100vh;
@@ -305,7 +305,7 @@ div {
           }
 
           .paragraph--type--image {
-            
+
             width: 50%;
             margin: 10px auto;
             height: auto;
@@ -405,9 +405,6 @@ div {
             }
           }
 
-          #node-1{
-
-          }
           #node-3{
             height: 100vh;
             background: url("../img/backdrop-the-company.png") no-repeat center center fixed;
@@ -423,6 +420,7 @@ div {
 
 
         }
+<<<<<<< HEAD
 
         // #caroussel {
         //   z-index: 0;
@@ -434,6 +432,8 @@ div {
         //   overflow: hidden;
         //   background-color: rgba(0,0,0,0.6);
         // }
+=======
+>>>>>>> 3929838993a11d877747b099051cfc128f244249
 
         .field--name-webform {
           width: 80%;
@@ -449,12 +449,10 @@ div {
 
             .webform-button--submit {
               margin-top: 5%;
-
             }
           }
           .form-actions {
             text-align: center;
-
           }
         }
       }
