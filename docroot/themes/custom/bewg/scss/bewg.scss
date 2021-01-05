@@ -995,52 +995,89 @@ div {
               }
             }
 
+            // Menu
             #block-mainnavigation {
 
-              ul {//menu
+              ul {
 
-                //position: absolute;
-                .menuDrop {
-                  outline: none;
-                  z-index: 1;
-                  transition: 0.5s;
-                }
+                &.menu {
+                  width: 100%;
+                  margin: auto 0 auto 0;
+                  top: 0;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
 
-                .subMenu_active {
-                  visibility: visible!important;
-                  overflow: hidden!important;
-                  max-height: fit-content!important;
-                  transition: max-height 0.5s;
-                }
+                  .menu-item {
+                    padding-top: 0!important;
 
-                &>.menu-item {
-                  font-size: calc(10px + 0.5vw);
+                    a {
+                      height: calc(100% / 6);
+                      vertical-align: middle;
+                      line-height: 66.6px;
+                      padding: 0 0 0 30%;
+                      color: white;
+                      text-decoration: none;
+                      height: 100%;
+                      width: 100%;
+                      display: inline-block;
+                      outline:none;
 
-                  ul {
-                    overflow: hidden;
-                    visibility: hidden;
-                    max-height: 0;
-                    height: fit-content;
-                    transition: max-height 0.5s;
+                      @include mediumHeight {
+                        height: 40px;
+                        line-height: 40px;
+                      }
 
-                    &.active {
-                      visibility: visible;
-                      overflow: hidden;
-                      max-height: fit-content;
-                      transition: max-height 0.5s;
+                      &:hover {
+                        background-color: #005E9B;
+                        cursor: pointer;
+                        transition: 0.2s;
+                      }
                     }
+                  }
 
-                    &>.menu-item {
-                      height: calc(100%/3)!important;
+                  &>.menu-item {
+                    font-size: calc(10px + 0.5vw);
 
-                      a {
-                        padding-left: 35%;
-                        font-size: calc(5 px +0.5vw);
-                        word-spacing: 0px;
+                    ul {
+                      overflow: hidden;
+                      visibility: hidden;
+                      max-height: 0;
+                      height: fit-content;
+                      transition: max-height 0.5s;
+
+                      &.active {
+                        visibility: visible;
+                        overflow: hidden;
+                        max-height: fit-content;
+                        transition: max-height 0.5s;
+                      }
+
+                      &>.menu-item {
+                        height: calc(100%/3)!important;
+
+                        a {
+                          padding-left: 35%;
+                          font-size: calc(5 px +0.5vw);
+                          word-spacing: 0px;
+                        }
                       }
                     }
                   }
                 }
+              }
+
+              .menuDrop {
+                outline: none;
+                z-index: 1;
+                transition: 0.5s;
+              }
+
+              .subMenu_active {
+                visibility: visible!important;
+                overflow: hidden!important;
+                max-height: fit-content!important;
+                transition: max-height 0.5s;
               }
             }
 
