@@ -423,7 +423,6 @@ div {
 
 
         }
-<<<<<<< HEAD
 
         // #caroussel {
         //   z-index: 0;
@@ -435,8 +434,6 @@ div {
         //   overflow: hidden;
         //   background-color: rgba(0,0,0,0.6);
         // }
-=======
->>>>>>> fb8106860046474478e9d75ede2e6590a756e456
 
         .field--name-webform {
           width: 80%;
@@ -539,8 +536,7 @@ div {
               .views-row {
 
                 .views-col {
-<<<<<<< HEAD
-                  background-color: rgba(255,255,255,0.85);
+                  background-color: rgba(255,255,255,1);
                   border-bottom:1px solid  #ccc;
                   margin-right: 5%;
                   width: calc(50% - 5%)!important;
@@ -548,12 +544,10 @@ div {
 
                   .views-field-field-teaser-media {
                     width: 45%;
-=======
-
-                    border-bottom:1px solid  #ccc;
->>>>>>> 938f757bf4a8bac2804fb7d190b954763a27124a
-                    margin-right: 5%;
+                    /* margin-right: 4%; */
                     float: left;
+                    margin-top: 30px;
+                    padding: 15px;
 
                     .field-content {
                       width: 100%;
@@ -568,24 +562,13 @@ div {
                         }
                       }
                     }
-<<<<<<< HEAD
-                  }
-                  .views-field-title {
-                    color: #666666;
-                    background-color: #ffffff;
-                    margin-bottom: 10px;
-
-                    span {
-                      a {
-                        color: inherit;
-                        font-weight: bold;
-                      }
-                      
-=======
                     .views-field-title {
-                      color: #666666;
-                      background-color: #ffffff;
-                      margin-bottom: 10px;
+                      width: 100%;
+                      position: absolute;
+                      text-align: center;
+                      /* margin-bottom: 29px; */
+                      height: 35px;
+                      padding: 5px;
 
                       span {
                         a {
@@ -598,27 +581,28 @@ div {
                     .views-field-field-introducao {
                       color: #666666;
                       width: 50%;
-                      float:right;
+                      float: right;
+                      margin-top: 35px;
+                      margin-right: 5%;
 
 
                       .field-content {
                         margin-bottom: 30px;
                         font-size: 0.8em;
+                        padding:10px;
+
                       }
->>>>>>> 938f757bf4a8bac2804fb7d190b954763a27124a
                     }
                   }
                   .views-field-field-introducao {
                     color: #666666;
                     width: 50%;
                     float:right;
-                    
 
                     .field-content {
                       margin-bottom: 30px;
                       font-size: 0.8em;
                     }
-<<<<<<< HEAD
                   }
                   .views-field-created {
                     position: absolute;
@@ -627,12 +611,9 @@ div {
                     text-align: right;
                     bottom: 0;
                     width: 100%;
+                    padding: 5% 5% 2% 5%;
                   }
                 }
-=======
-
-                 }
->>>>>>> 938f757bf4a8bac2804fb7d190b954763a27124a
               }
               .views-view-grid {}
             }
