@@ -63,11 +63,17 @@ div {
   .page {
     position: absolute;
     width: 100%;
-    height:  100%; 
+    height:  100%;
 
     #content {
-
       min-height: 100vh;
+
+      #block-languageswitcher {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+      }
+
       .footer_btn_container {
         position: fixed;
         bottom: 160px;
@@ -84,7 +90,7 @@ div {
           background-size: cover;
           --webkit-animation: downward 1.2s infinite alternate-reverse;
           animation: downward 1.2s infinite alternate-reverse;
-  
+
         }
       }
       //ATIVIDADE BOX
@@ -99,7 +105,7 @@ div {
           color: white;
           margin: 20px;
           width: calc(50% - 40px)!important;
-  
+
           .views-field-title {
             position: absolute;
             height: 100%;
@@ -117,7 +123,7 @@ div {
 
             }
           }
-          
+
           .views-field-field-atividade-img {
             width: 100%;
             height: 100%;
@@ -144,7 +150,7 @@ div {
           height: 50px;
           transition: 0.5s;
           line-height: 50px;
-          
+
         }
         .atividade-box-layout:hover {
           cursor: pointer;
@@ -154,7 +160,7 @@ div {
           transform: scale(1.5);
           transition: 0.5s;
 
-        } 
+        }
       }
       .footer_open {
         bottom: 20px;
@@ -164,7 +170,7 @@ div {
       }
       .footer_close:hover {
         cursor: pointer;
-        
+
       }
       #block-bewg-content {
         height: fit-content;
@@ -184,7 +190,7 @@ div {
             left: 320px;
             display: block;
           }
-          
+
 
           .field--name-field-basic-page-paragraphs {
             text-align: left;
@@ -195,7 +201,7 @@ div {
             background-color: rgba(255,255,255,0.85);
             margin: 0 20% 5% 20%;
             padding: 2%;
-            
+
             .field__item {
               width: 100%;
 
@@ -228,7 +234,7 @@ div {
                   background: #f1f1f1;
 
                 }
-                
+
                 /* Handle */
                 ::-webkit-scrollbar-thumb {
                   background: #888;
@@ -283,7 +289,7 @@ div {
 
             }
             .field__item {
-              
+
               img {
                 width: 50%;
                 height: auto;
@@ -314,14 +320,14 @@ div {
             }
             .field__items {
               color:#666666;
-              
+
               h2,h3,h4,h5,h6 {
                 padding: 10px;
                 background-image:linear-gradient(90deg, #10a6a6, #3c6ba8);
                 margin: 0 0 10px 0!important;
                 text-align: center;
                 color: white;
-                
+
               }
             }
           }
@@ -336,14 +342,14 @@ div {
               top: 0;
               min-height: 100vh;
               height: 100%;
-              
+
               img {
                 height: 100%;
                 overflow: hidden;
                 object-fit: cover;
 
-              } 
-              
+              }
+
             }
           }
           //img de fundo da pagina da sustentabilidade
@@ -358,20 +364,20 @@ div {
               top: 0;
               min-height: 100vh;
               height: 100%;
-              
+
               img {
                 height: 100%;
                 overflow: hidden;
                 object-fit: cover;
 
-              } 
-              
+              }
+
             }
           }
-  
+
           #node-1{
 
-          }    
+          }
           #node-3{
             height: 100vh;
             background: url("../img/backdrop-the-company.png") no-repeat center center fixed;
@@ -384,10 +390,10 @@ div {
           .field--type-geofield {
             display: none;
           }
-          
+
 
         }
-        
+
         // #caroussel {
         //   z-index: 0;
         //   position: absolute;
@@ -422,7 +428,7 @@ div {
           }
         }
       }
-      //MAPA 
+      //MAPA
       .block-views-blockmapa-block-1 {
         width: 500px;
         margin: 0 auto;
@@ -436,11 +442,11 @@ div {
 
               #leaflet-map-view-mapa-block-1 {
                 border: 1px solid white;
-                
+
                 .leaflet-control-container {
 
                   .leaflet-top {
-                    
+
                     .leaflet-control-fullscreen {
                       display: none;
                     }
@@ -472,7 +478,7 @@ div {
                 .leaflet-control-container {
 
                   .leaflet-top {
-                    
+
                     .leaflet-control-fullscreen {
                       display: none;
                     }
@@ -496,9 +502,9 @@ div {
             .view-content {
 
               .views-row {
-                
+
                 .views-col {
-                  
+
                     border-bottom:1px solid  #ccc;
                     margin-right: 5%;
                     width: calc(50% - 5%)!important;
@@ -533,14 +539,14 @@ div {
                           color: inherit;
                           font-weight: bold;
                         }
-                        
+
                       }
                     }
                     .views-field-field-introducao {
                       color: #666666;
                       width: 50%;
                       float:right;
-                      
+
 
                       .field-content {
                         margin-bottom: 30px;
@@ -555,7 +561,7 @@ div {
                       bottom: 0;
                       width: 100%;
                     }
-                  
+
                  }
               }
               .views-view-grid {}
@@ -576,7 +582,7 @@ div {
             color: white;
             margin: 20px;
             width: calc(50% - 40px)!important;
-    
+
             .views-field-title {
               position: absolute;
               height: 350px;
@@ -588,21 +594,21 @@ div {
               z-index: 10;
               transition:0.5s;
               font-size: 1.5em;
-  
+
               a {
                 color: inherit;
-  
+
               }
             }
-            
+
             .views-field-field-sustentabilidade-image {
               width: 100%;
               height: 100%;
               overflow: hidden;
-  
+
               div {
                 height: 100%;
-  
+
                 img {
                   height: 100%;
                   width: 100%;
@@ -617,13 +623,13 @@ div {
 
           }
         }
-        
+
 
         .sustentabilidade-column:hover .views-field-title{
           height: 100px;
           transition: 0.5s;
           line-height: 100px;
-          
+
         }
         .sustentabilidade-column:hover {
           cursor: pointer;
@@ -683,7 +689,7 @@ div {
           text-align: center;
 
         }
-        
+
       }
       #block-views-block-frontpage-footer-block-1 {
         position: fixed;
@@ -698,11 +704,11 @@ div {
         height: 140px;
 
         div {
-          
+
           .view {
-            
+
             .view-content {
-              
+
               table {
                   margin: 0 25% 0 25%;
                   width: 50%;
@@ -770,7 +776,7 @@ div {
             background-color:#ffffff;
             margin: 5% 5% 5% 5%;
             width: 90%;
-            
+
             .seo-title {
               padding: 10px!important;
               vertical-align: baseline;
@@ -801,7 +807,7 @@ div {
                   h2,h3,h4,h5,h6 {
                     padding: 10px;
                     background-color: #f2f2f2;
-                    margin: 0!important; 
+                    margin: 0!important;
 
                   }
                   p{
@@ -815,7 +821,7 @@ div {
                 width: 40%;
                 float: right;
                 height: 100%;
-               
+
               }
             }
             .views-image {
@@ -830,7 +836,7 @@ div {
         }
       }
     }
-    
+
     main {
       height: 100%;
       width: 100%;
@@ -854,11 +860,11 @@ div {
           filter: invert(1);
           --webkit-animation: backward 1.2s infinite alternate-reverse;
           animation: backward 1.2s infinite alternate-reverse;
-          
+
         }
         .menuBar_btn:hover {
           cursor: pointer;
-  
+
         }
       }
       .menu_btn_container_active {
@@ -874,7 +880,7 @@ div {
         overflow: hidden;
         transition-property: width;
         transition-duration: 0.5s;
- 
+
       }
       .sidebar_inactive {
         width: 0px!important;
@@ -897,7 +903,7 @@ div {
         width: 20vw;
 
       }
-      
+
     /*TEXTO DA ATIVIDADE*/
     .field--name-field-header {
       //padding: 100px 30px 0px 30px;
@@ -928,7 +934,7 @@ div {
 
         #sidebar-first {
           background-image: linear-gradient(180deg, #3c6ba8, #10a6a6);
-          
+
           &>div {
             height: 100vh;
             min-width: 300px;
@@ -951,7 +957,7 @@ div {
                 max-width: 300px;
 
               }
-              
+
             }
           }
           #block-mainnavigation {
@@ -970,7 +976,7 @@ div {
                 overflow: hidden!important;
                 max-height: fit-content!important;
                 transition: max-height 0.5s;
-                
+
               }
               &>.menu-item {
                 font-size: calc(10px + 0.5vw);
@@ -991,7 +997,7 @@ div {
                   }
                   &>.menu-item {
                     height: calc(100%/3)!important;
-                    
+
 
                     a {
                       padding-left: 35%;
@@ -1008,7 +1014,7 @@ div {
             width: 100%;
 
             ul {
-              
+
               &.menu {
                 width: 100%;
                 margin: auto 0 auto 0;
@@ -1016,10 +1022,10 @@ div {
                 bottom: 0;
                 left: 0;
                 right: 0;
-                
+
                 .menu-item {
                   padding-top: 0!important;
- 
+
                   a {
                     height: calc(100% / 6);
                     vertical-align: middle;
