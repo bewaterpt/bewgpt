@@ -85,6 +85,11 @@ div {
           padding-left: 300px;
           transition: 0.5s;
 
+          &.content_active {
+            padding-left: 0px!important;
+            transition: 0.5s;
+          }
+
           &::after {
             display: none;
           }
@@ -93,6 +98,7 @@ div {
             position: fixed;
             right: 10px;
             bottom: 10px;
+            z-index: 100;
           }
 
           .footer_btn_container {
@@ -926,18 +932,6 @@ div {
             transition: left 0.5s;
           }
 
-          .sidebar_inactive {
-            width: 0px!important;
-            transition-property: width;
-            transition-duration: 0.5s;
-            overflow: hidden;
-          }
-
-          .content_active {
-            padding-left: 0px!important;
-            transition: 0.5s;
-          }
-
           .block-menu{
             width: 20vw;
           }
@@ -967,6 +961,13 @@ div {
           overflow: hidden;
           transition-property: width;
           transition-duration: 0.5s;
+
+          &.sidebar_inactive {
+            width: 0px!important;
+            transition-property: width;
+            transition-duration: 0.5s;
+            overflow: hidden;
+          }
 
           &>div {
             height: 100vh;
@@ -1076,50 +1077,6 @@ div {
               transition: max-height 0.5s;
             }
           }
-
-          // #block-mainnavigation {
-          //   width: 100%;
-
-          //   ul {
-
-          //     &.menu {
-          //       width: 100%;
-          //       margin: auto 0 auto 0;
-          //       top: 0;
-          //       bottom: 0;
-          //       left: 0;
-          //       right: 0;
-
-          //       .menu-item {
-          //         padding-top: 0!important;
-
-          //         a {
-          //           height: calc(100% / 6);
-          //           vertical-align: middle;
-          //           line-height: 66.6px;
-          //           padding: 0 0 0 30%;
-          //           color: white;
-          //           text-decoration: none;
-          //           height: 100%;
-          //           width: 100%;
-          //           display: inline-block;
-          //           outline:none;
-
-          //           @include mediumHeight {
-          //             height: 40px;
-          //             line-height: 40px;
-          //           }
-
-          //           &:hover {
-          //             background-color: #005E9B;
-          //             cursor: pointer;
-          //             transition: 0.2s;
-          //           }
-          //         }
-          //       }
-          //     }
-          //   }
-          // }
         }
       }
     }
