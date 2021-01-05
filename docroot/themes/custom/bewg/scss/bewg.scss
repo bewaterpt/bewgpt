@@ -509,40 +509,60 @@ div {
       //news basic page
       .block-views-blocknews-block-1 {
         div {
+          
           .view-news {
             margin-top: 5%;
             display: block;
             margin-bottom: 5%;
+
             .view-content {
 
               .views-row {
 
                 .views-col {
+<<<<<<< HEAD
+                  background-color: rgba(255,255,255,0.85);
+                  border-bottom:1px solid  #ccc;
+                  margin-right: 5%;
+                  width: calc(50% - 5%)!important;
+                  position: relative;
+
+                  .views-field-field-teaser-media {
+                    width: 45%;
+=======
 
                     border-bottom:1px solid  #ccc;
+>>>>>>> 938f757bf4a8bac2804fb7d190b954763a27124a
                     margin-right: 5%;
-                    width: calc(50% - 5%)!important;
-                    position: relative;
+                    float: left;
 
-                    .views-field-field-teaser-media {
-                      width: 45%;
-                      margin-right: 5%;
-                      float: left;
+                    .field-content {
+                      width: 100%;
+                      margin-right: 20px;
 
-                      .field-content {
-                        width: 100%;
-                        margin-right: 20px;
+                      a {
 
-                        a {
+                        img {
+                          height: 150px;
+                          width: 200px;
 
-                          img {
-                            height: 150px;
-                            width: 200px;
-
-                          }
                         }
                       }
                     }
+<<<<<<< HEAD
+                  }
+                  .views-field-title {
+                    color: #666666;
+                    background-color: #ffffff;
+                    margin-bottom: 10px;
+
+                    span {
+                      a {
+                        color: inherit;
+                        font-weight: bold;
+                      }
+                      
+=======
                     .views-field-title {
                       color: #666666;
                       background-color: #ffffff;
@@ -566,17 +586,34 @@ div {
                         margin-bottom: 30px;
                         font-size: 0.8em;
                       }
+>>>>>>> 938f757bf4a8bac2804fb7d190b954763a27124a
                     }
-                    .views-field-created {
-                      position: absolute;
-                      color: #666666;
-                      margin-top: 5px;
-                      text-align: right;
-                      bottom: 0;
-                      width: 100%;
+                  }
+                  .views-field-field-introducao {
+                    color: #666666;
+                    width: 50%;
+                    float:right;
+                    
+
+                    .field-content {
+                      margin-bottom: 30px;
+                      font-size: 0.8em;
                     }
+<<<<<<< HEAD
+                  }
+                  .views-field-created {
+                    position: absolute;
+                    color: #666666;
+                    margin-top: 5px;
+                    text-align: right;
+                    bottom: 0;
+                    width: 100%;
+                  }
+                }
+=======
 
                  }
+>>>>>>> 938f757bf4a8bac2804fb7d190b954763a27124a
               }
               .views-view-grid {}
             }
