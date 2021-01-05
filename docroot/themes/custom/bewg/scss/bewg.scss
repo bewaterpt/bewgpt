@@ -821,14 +821,14 @@ div {
           //views
           .view-content {
 
-            table{
+            table {
               width: 80%;
               margin: 2% 10% 5% 10%;
               border-spacing: 0 25px;
               transition: 0.5s;
 
               tbody {
-                background-color: transparent!important;
+                background-color: transparent !important;
                 transition: 0.5s;
 
                 tr {
@@ -837,11 +837,11 @@ div {
                   width: 90%;
 
                   .seo-title {
-                    padding: 10px!important;
+                    padding: 10px !important;
                     vertical-align: baseline;
                     color: #666666;
                     font-size: 1.2em;
-                    border: none!important;
+                    border: none !important;
 
                     .seo_title_text {
                       background-image: linear-gradient(90deg, #10a6a6, #3c6ba8);
@@ -852,9 +852,9 @@ div {
                     }
 
                     .paragraph {
-                      text-align: left!important;
+                      text-align: left !important;
                       color: #666666;
-                      font-size: 0.9em!important;
+                      font-size: 0.9em !important;
                       word-break: break-all;
                       // display: inline-block;
                       width: 58%;
