@@ -205,21 +205,27 @@ div {
                     }
                   }
                 }
-              }
 
-              .atividade-box-layout:hover .views-field-title{
-                height: 50px;
-                transition: 0.5s;
-                line-height: 50px;
-              }
+                &:hover {
+                  cursor: pointer;
 
-              .atividade-box-layout:hover {
-                cursor: pointer;
-              }
+                  .views-field-title{
+                    height: 50px;
+                    transition: 0.5s;
+                    line-height: 50px;
+                  }
 
-              .atividade-box-layout:hover .views-field-field-teaser-media>span>img {
-                transform: scale(1.5);
-                transition: 0.5s;
+                  .views-field-field-teaser-media {
+
+                    &>span {
+
+                      &>img {
+                        transform: scale(1.5);
+                        transition: 0.5s;
+                      }
+                    }
+                  }
+                }
               }
             }
           }
