@@ -52,7 +52,7 @@ function bewg_preprocess_page(&$variables) {
   //   '#url' => Url::fromRoute('<front>'),
   // ];
   // $variables["background_url"] = "";
-    
+
   if(isset($variables["node"]) && $variables["node"]->getType() == "page"){
     $targetId = $variables["node"]->field_background_image->target_id;
     $mediaEntity = Media::load($targetId);
@@ -60,9 +60,9 @@ function bewg_preprocess_page(&$variables) {
     $variables["background_url"] = $fileEntity->createFileUrl();
 
   }else{
-    $variables["background_url"] = "http://bewgpt.dd:8083/sites/bewgpt.dd/files/2020-12/bg-news.jpg";
+    $variables["background_url"] = "/sites/default/files/2020-12/bg-news.jpg";
   }
-  
+
 }
 
 /**
