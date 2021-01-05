@@ -53,14 +53,11 @@
     });
 
       //botao de dar close e abrir footer front_page
-      $("#footer_close").on("click",function(event){
-        $("#footer_close").toggleClass("footer_open");
+      $("#footer_btn_container").on("click",function(event){
+        $("#footer_btn_container").toggleClass("footer_open");
         $('#block-views-block-frontpage-footer-block-1').toggleClass('views-frontpage-footer-closed');
 
       })
-      
-
-
       //click na Atividade Box
       $('.atividade-box-layout').click(function(event){
           console.log("funca");
