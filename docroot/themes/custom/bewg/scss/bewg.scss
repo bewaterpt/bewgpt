@@ -916,15 +916,6 @@ div {
           transition: left 0.5s;
         }
 
-        #sidebar-first {
-          position: fixed;
-          width: 300px;
-          z-index: 5;
-          overflow: hidden;
-          transition-property: width;
-          transition-duration: 0.5s;
-        }
-
         .sidebar_inactive {
           width: 0px!important;
           transition-property: width;
@@ -971,6 +962,12 @@ div {
 
           #sidebar-first {
             background-image: linear-gradient(180deg, #3c6ba8, #10a6a6);
+            position: fixed;
+            width: 300px;
+            z-index: 5;
+            overflow: hidden;
+            transition-property: width;
+            transition-duration: 0.5s;
 
             &>div {
               height: 100vh;
