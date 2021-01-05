@@ -185,7 +185,12 @@ div {
             .field__label {
               display: none;
             }
-
+            .field_item {
+              
+              img {
+                height: 100%;
+              }
+            }
           }
           .field--name-field-header {
             color: white;
@@ -267,7 +272,7 @@ div {
             padding: 20px;
             z-index: 3;
             position: relative;
-            
+
             .field__label {
               display: none;
 
