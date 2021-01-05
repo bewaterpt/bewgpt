@@ -619,11 +619,12 @@ div {
                 }
               }
             }
+              }
+            }
           }
 
-
           // Sustentabilidade
-          .views-element-container {
+          .block-views-block-sub-pages-block-2 {
 
             .views-row {
               width: 80%!important;
@@ -695,35 +696,35 @@ div {
           }
 
           // Sustentabilidade
-          .field--name-field-sustentabilidade-paragraph {
-            width: 70%;
-            margin: 20px 15% 20px 15%;
-            background-color: rgba(255,255,255,0.85);
-            padding: 20px;
-            position: relative;
-            z-index: 2;
+          // .field--name-field-sub-paragraph {
+          //   width: 70%;
+          //   margin: 20px 15% 20px 15%;
+          //   background-color: rgba(255,255,255,0.85);
+          //   padding: 20px;
+          //   position: relative;
+          //   z-index: 2;
 
-            .field__label {
-              display: none;
-            }
+          //   .field__label {
+          //     display: none;
+          //   }
 
-            .field__items {
-              color:#666666;
+          //   .field__items {
+          //     color:#666666;
 
-              .field__item {
-                margin-bottom: 10px;
-              }
+          //     .field__item {
+          //       margin-bottom: 10px;
+          //     }
 
-              h2, h3, h4,
-              h5, h6 {
-                padding: 10px;
-                background-image:linear-gradient(90deg, #10a6a6, #3c6ba8);
-                margin: 0 0 10px 0!important;
-                text-align: center;
-                color: white;
-              }
-            }
-          }
+          //     h2, h3, h4,
+          //     h5, h6 {
+          //       padding: 10px;
+          //       background-image:linear-gradient(90deg, #10a6a6, #3c6ba8);
+          //       margin: 0 0 10px 0!important;
+          //       text-align: center;
+          //       color: white;
+          //     }
+          //   }
+          // }
 
           #block-webform {
             width: 60%;
@@ -766,42 +767,42 @@ div {
                 .view-content {
 
                   table {
-                      margin: 0 25% 0 25%;
-                      width: 50%;
-                      border-left: 0.8px solid white;
-                      height: 90%;
-                      border-spacing: 0!important;
-                      color: white;
-                      background-color: transparent;
+                    margin: 0 25% 0 25%;
+                    width: 50%;
+                    border-left: 0.8px solid white;
+                    height: 90%;
+                    border-spacing: 0!important;
+                    color: white;
+                    background-color: transparent;
 
-                      tbody {
+                    tbody {
+                      border: none;
+
+                      tr {
+                        background-color: transparent;
                         border: none;
+                        font-size: 0.8em;
 
-                        tr {
-                          background-color: transparent;
-                          border: none;
-                          font-size: 0.8em;
+                        td {
+                          border: none!important;
 
-                          td {
-                            border: none!important;
-
-                            a {
-                              color: inherit;
-                            }
-                          }
-
-                          tr:hover {
-                            background-color:transparent;
+                          a {
+                            color: inherit;
                           }
                         }
 
-                        tr:hover>td{
-                          background-color: transparent!important;
-                          text-decoration: underline;
+                        tr:hover {
+                          background-color:transparent;
                         }
+                      }
+
+                      tr:hover>td{
+                        background-color: transparent!important;
+                        text-decoration: underline;
                       }
                     }
                   }
+                }
               }
             }
           }
@@ -815,8 +816,6 @@ div {
 
           .webform-element-description {
             display: none;
-          }
-            }
           }
 
           //views
