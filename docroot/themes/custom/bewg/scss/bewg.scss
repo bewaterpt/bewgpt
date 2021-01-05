@@ -177,6 +177,16 @@ div {
         article {
           position: relative;
 
+          .field--name-field-subpage-image {
+            position: fixed;
+            z-index: 0;
+            top: 0;
+
+            .field__label {
+              display: none;
+            }
+
+          }
           .field--name-field-header {
             color: white;
             width: 500px;
@@ -255,9 +265,12 @@ div {
             margin: 20px 15% 20px 15%;
             background-color: rgba(245,245,252,0.85);
             padding: 20px;
+            z-index: 3;
+            position: relative;
+            
             .field__label {
               display: none;
-              
+
             }
             .field__item {
 
