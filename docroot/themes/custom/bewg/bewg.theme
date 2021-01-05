@@ -53,19 +53,21 @@ function bewg_preprocess_page(&$variables) {
   // ];
   // $variables["background_url"] = "";
 
-  if(isset($variables["node"]) && $variables["node"]->getType() == "page"){
-    $targetId = $variables["node"]->field_background_image->target_id;
-    $mediaEntity = Media::load($targetId);
-    $fileEntity = File::load($mediaEntity->field_image->target_id);
+  if (isset($variables["node"])) {
+    if ($variables["node"]->getType() == "page" || $variables["node"]->getType() == "sub_page") {
+      $targetId = $variables["node"]->field_background_image->target_id;
+      $mediaEntity = Media::load($targetId);
+      $fileEntity = File::load($mediaEntity->field_image->target_id);
 
-    try {
-      $variables["background_url"] = $fileEntity->createFileUrl();
-    } catch(\Exception $e) {
-      $variables["background_url"] = "/sites/default/files/2020-12/bg-news.jpg";
+      try {
+        $variables["background_url"] = $fileEntity->createFileUrl();
+      } catch(\Exception $e) {
+        $variables["background_url"] = "/themes/custom/bewg/img/bg-default.jpg";
+      }
+
+    } else {
+      $variables["background_url"] = "/themes/custom/bewg/img/bg-default.jpg";
     }
-
-  }else{
-    $variables["background_url"] = "/sites/default/files/2020-12/bg-news.jpg";
   }
 
 }
