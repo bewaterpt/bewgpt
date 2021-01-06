@@ -311,6 +311,7 @@ div {
 
                 .field__label {
                   display: none;
+
                 }
 
                 .field__item {
@@ -319,6 +320,7 @@ div {
                     height: 100%;
                     min-height: 100vh;
                     min-width: 100vw;
+
                   }
                 }
               }
@@ -334,6 +336,7 @@ div {
                 display: block;
                 bottom: 37%;
                 right: 100px;
+
               }
 
               .field--name-field-basic-page-paragraphs {
@@ -342,23 +345,23 @@ div {
                 z-index: 1;
                 margin-bottom: 20px;
                 padding-bottom: 30px;
-                background-color: rgba(255,255,255,0.85);
                 margin: 10px 20% 5% 20%;
-                padding: 2%;
 
                 .field__item {
                   width: 100%;
+                  margin-bottom: 20px;
 
                   .paragraph {
+                    background-color: rgba(255,255,255,0.85);
 
                     .field--name-field-text {
                       width: 100%;
                       color: #666666;
                       overflow-y: hidden;
                       height: fit-content;
+                      padding: 2%;
 
-                      h2, h3,
-                      h4, h5, h6 {
+                      h2, h3,h4, h5, h6 {
                         padding: 10px;
                         background-image:linear-gradient(90deg, #10a6a6, #3c6ba8);
                         margin: 0!important;
@@ -370,27 +373,25 @@ div {
                         margin-top: 10px;
                       }
                     }
+                  }
+                  ::-webkit-scrollbar {
+                    width: 10px;
+                  }
+                  /* Track */
+                  ::-webkit-scrollbar-track {
+                    background: #f1f1f1;
+                  }
+                  /* Handle */
+                  ::-webkit-scrollbar-thumb {
+                    background: #888;
+                  }
 
-                    ::-webkit-scrollbar {
-                      width: 10px;
-                    }
-
-                    /* Track */
-                    ::-webkit-scrollbar-track {
-                      background: #f1f1f1;
-                    }
-
-                    /* Handle */
-                    ::-webkit-scrollbar-thumb {
-                      background: #888;
-                    }
-
-                    /* Handle on hover */
-                    ::-webkit-scrollbar-thumb:hover {
-                      background: #555;
-                    }
+                  /* Handle on hover */
+                  ::-webkit-scrollbar-thumb:hover {
+                    background: #555;
                   }
                 }
+
               }
 
               // Article
