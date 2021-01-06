@@ -591,10 +591,6 @@ div {
                       margin-right: 5%;
                       float: left;
 
-                      .field-content {
-                        width: 100%;
-                        margin-right: 20px;
-
                       .views-field-field-teaser-media {
                         width: 45%;
                         /* margin-right: 4%; */
@@ -606,16 +602,16 @@ div {
                           width: 100%;
                           margin-right: 20px;
 
-                        a {
+                          a {
 
-                          img {
-                            height: 150px;
-                            width: 200px;
+                            img {
+                              height: 150px;
+                              width: 200px;
 
+                            }
                           }
                         }
                       }
-
                       .views-field-title {
                         width: 100%;
                         position: absolute;
@@ -632,7 +628,6 @@ div {
                           }
                         }
                       }
-
                       .views-field-field-introducao {
                         color: #666666;
                         width: 50%;
@@ -655,12 +650,10 @@ div {
                         bottom: 0;
                         width: 100%;
                         padding: 5% 5% 2% 5%;
-                      }
+                      } 
                     }
                   }
                 }
-              }
-            }
               }
             }
           }
