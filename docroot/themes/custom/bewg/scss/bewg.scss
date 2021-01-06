@@ -648,9 +648,13 @@ body {
                       border-bottom:1px solid  #ccc;
                       float: left;
                       position: relative;
-                      width: 45%!important;
+                      width: 47.5%!important;
                       margin-bottom: 5%;
                       
+                       
+                      &.col-1 {
+                        margin-right: 5%;
+                      }
                       .views-field-field-teaser-media {
                         width: 45%;
                         /* margin-right: 4%; */
