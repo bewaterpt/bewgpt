@@ -567,72 +567,76 @@ body {
             width: 500px;
             margin: 0 auto;
             margin-bottom: 5%;
+            
+            div {
 
-            &.block-views-blockstatic-maps-block-2 {
+              .view {
 
-              div {
-  
-                .view {
-  
-                  .views-row {
-  
-                    .views-field {
-  
-                      .field-content {
-  
-                        #leaflet-map-node-static-map-68-field-map {
-                          border: 1px solid white;
-      
-                          .leaflet-control-container {
-      
-                            .leaflet-top {
-      
-                              .leaflet-control-fullscreen {
-                                display: none;
-                              }
-                            }
-      
-                            .leaflet-right {
+                .views-row {
+
+                  .views-field {
+
+                    .field-content {
+
+                      #leaflet-map-node-static-map-68-field-map {
+                        border: 1px solid white;
+    
+                        .leaflet-control-container {
+    
+                          .leaflet-top {
+    
+                            .leaflet-control-fullscreen {
                               display: none;
                             }
                           }
+    
+                          .leaflet-right {
+                            display: none;
+                          }
                         }
                       }
-    
                     }
+  
                   }
                 }
               }
             }
           }
-          //MAPA INTERNACIONAL
-          .block-views-blockmapa-internacional-block-1 {
-            width: 630px;
+          //MAPA SEDE-CONTACTOS
+          .block-views-blockstatic-maps-block-2 {
+            width: 500px;
             margin: 0 auto;
             margin-bottom: 5%;
-
+            
             div {
 
               .view {
 
-                .view-content {
+                .views-row {
 
-                  #leaflet-map-view-mapa-internacional-block-1 {
-                    border: 1px solid white;
+                  .views-field {
 
-                    .leaflet-control-container {
+                    .field-content {
 
-                      .leaflet-top {
-
-                        .leaflet-control-fullscreen {
-                          display: none;
+                      #leaflet-map-node-static-map-70-field-map {
+                        border: 1px solid white;
+    
+                        .leaflet-control-container {
+    
+                          .leaflet-top {
+    
+                            .leaflet-control-fullscreen {
+                              display: none;
+                            }
+                          }
+    
+                          .leaflet-right {
+                            display: none;
+                          }
                         }
                       }
-
-                      .leaflet-right {
-                        display: none;
-                      }
                     }
+  
                   }
                 }
               }
