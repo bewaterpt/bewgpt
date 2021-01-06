@@ -855,15 +855,14 @@ body {
                 .view-content {
 
                   table {
-                    margin: 0 25vw 0 0%;
+                    margin: 0 25% 0 25%;
                     width: 50%;
                     border-left: 0.8px solid white;
                     height: 90%;
                     border-spacing: 0!important;
                     color: white;
                     background-color: transparent;
-                    min-width: calc(50vw / 2);
-                    overflow: hidden;
+                    
 
                     tbody {
                       border: none;
