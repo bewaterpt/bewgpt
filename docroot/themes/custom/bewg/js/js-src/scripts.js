@@ -37,9 +37,9 @@
     $("#content").toggleClass("content_active");
     $(".menu_btn_container").toggleClass("menu_btn_container_active");
     //barra do footer reduzir o tamanho
-    $("#block-views-block-frontpage-footer-block-1").css("margin-left","300px");
+    $("#block-views-block-frontpage-footer-block-1").css("margin-left","0px");
     $("#block-views-block-frontpage-footer-block-1").css("transition","margin-left 0.5s");
-    $(".view-frontpage-footer .view-content table").css("margin","0 25% 0 calc(25% - 150px)");
+    // $(".view-frontpage-footer .view-content table").css("margin","0 25% 0 calc(25% - 150px)");
   });
 
   $(document).mouseup(function(e){
