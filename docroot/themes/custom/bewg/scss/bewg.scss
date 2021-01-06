@@ -696,12 +696,13 @@ body {
                         position: absolute;
                         text-align: center;
                         /* margin-bottom: 29px; */
-                        height: 35px;
+                        height: 30px;
                         padding: 5px;
                         background-image: linear-gradient(90deg, #10a6a6, #3c6ba8);
                         margin: 2%;
                         width: 96%;
                         color: white;
+                        overflow: hidden;
 
                         span {
 
@@ -843,7 +844,6 @@ body {
             overflow: hidden;
             z-index: 2;
             padding: 10px;
-            // background-color: rgba(60, 107, 168,0.8);
             background-image: linear-gradient(to left, rgba(60, 107, 168, 1),  rgba(60, 107, 168, 0.85), rgba(60, 107, 168, 0.83));
             transition: 0.5s;
             height: 140px;
@@ -950,7 +950,6 @@ body {
                       color: #666666;
                       font-size: 0.9em !important;
                       word-break: break-all;
-                      // display: inline-block;
                       width: 58%;
                       float:left;
 
@@ -999,7 +998,6 @@ body {
 
           /*TEXTO DA ATIVIDADE*/
           .field--name-field-header {
-            //padding: 100px 30px 0px 30px;
 
             .field__item{
               color: #ffffff;
@@ -1015,11 +1013,7 @@ body {
         }
 
         #sidebar-first {
-          // background-image: linear-gradient(180deg, #3c6ba8, #10a6a6);
-          background-image: linear-gradient(to bottom, rgba(60, 107, 168, 1), rgba(60, 107, 168, 0.8));
-          position: fixed;
-          // background-color: #3c6ba8;
-          // -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.8)));
+          background-image: linear-gradient(to bottom, rgba(60, 107, 168, 1), rgba(60, 107, 168, .8));
           position: fixed;
           width: 300px;
           max-width: 300px;
@@ -1028,9 +1022,7 @@ body {
           transition: max-width 0.5s ease;
 
           &.sidebar_inactive {
-            max-width: 0px!important;
-            // transition-property: width;
-            // transition-duration: 0.5s;
+            max-width: 0px !important;
             overflow: hidden;
           }
 
