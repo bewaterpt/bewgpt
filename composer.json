@@ -86,6 +86,11 @@
             "locations": {
                 "web-root": "docroot/"
             }
+        },
+        "patches": {
+            "drupal/core": {
+                "Media Entity doesn't provide a resolution limiter for image fields": "https://www.drupal.org/files/issues/2020-08-30/media_library---file---upload_form_not_getting_populated_with_image_size_validators-3008292-23.patch"
+            }
         }
     },
     "config": {
