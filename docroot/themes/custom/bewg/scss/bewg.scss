@@ -84,11 +84,11 @@ body {
         .menu_btn_container {
           transform: rotate(180deg);
           transition: transform 0.5s;
-          transition: left 0.5s;
           position: fixed;
           top: calc(50% - 25px);
           z-index: 4;
           left: 320px;
+          mix-blend-mode: difference;
 
           .menuBar_btn {
             width: 40px;
@@ -96,9 +96,11 @@ body {
             background-image: url("../img/double_arrow_right.png");
             background-size: cover;
             filter: invert(1);
-            --webkit-animation: backward 1.2s infinite alternate-reverse;
             animation: backward 1.2s infinite alternate-reverse;
-
+            --webkit-animation: backward 1.2s infinite alternate-reverse;
+            --moz-animation: backward 1.2s infinite alternate-reverse;
+            --ms-animation: backward 1.2s infinite alternate-reverse;
+            --o-animation: backward 1.2s infinite alternate-reverse;
           }
 
           .menuBar_btn:hover {
