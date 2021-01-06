@@ -43,54 +43,34 @@ function bewg_preprocess_html(&$variables) {
  * Implements template_preprocess_page.
  */
 function bewg_preprocess_page(&$variables) {
+  if (isset($variables["node"])) {
+    if ($variables["node"]->getType() == "page" || $variables["node"]->getType() == "sub_page") {
+      $targetId = $variables["node"]->field_background_image->target_id;
+      $mediaEntity = Media::load($targetId);
+      $fileEntity = File::load($mediaEntity->field_image->target_id);
 
-  // $site_name = \Drupal::configFactory()->get('system.site')->get('name');
+      try {
+        $variables["background_url"] = $fileEntity->createFileUrl();
+      } catch(\Exception $e) {
+        $variables["background_url"] = "/themes/custom/bewg/img/bg-default.jpg";
+      }
 
-  // $variables['linked_site_name'] = [
-  //   '#type' => 'link',
-  //   '#title' => $site_name,
-  //   '#url' => Url::fromRoute('<front>'),
-  // ];
-  // $variables["background_url"] = "";
-
-  if(isset($variables["node"]) && $variables["node"]->getType() == "page"){
-    $targetId = $variables["node"]->field_background_image->target_id;
-    $mediaEntity = Media::load($targetId);
-    $fileEntity = File::load($mediaEntity->field_image->target_id);
-
-    try {
-      $variables["background_url"] = $fileEntity->createFileUrl();
-    } catch(\Exception $e) {
-      $variables["background_url"] = "/sites/default/files/2020-12/bg-news.jpg";
+    } else {
+      $variables["background_url"] = "/themes/custom/bewg/img/bg-default.jpg";
     }
-
-  }else{
-    $variables["background_url"] = "/sites/default/files/2020-12/bg-news.jpg";
   }
-
 }
 
 /**
- * Implements template_preprocess_node.
+ * Use language code for the language switcher
+ *
+ * @param $variables
  */
-function bewg_preprocess_node(&$variables) {
-  // $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+function MYTHEME_preprocess_links__language_block(&$variables) {
 
-  // if ($variables['is_front']) {
-  //   $nids = \Drupal::entityQuery('node')->condition('type','front_caroussel_items')->execute();
-  //   $nodes = Node::loadMultiple($nids);
-  //   $variables['caroussel_items'] = [];
-  //   foreach ($nodes as $node) {
-  //     $url = file_create_url(
-  //       File::load(
-  //         $node->field_caroussel_image->getValue()[0]['target_id']
-  //       )->uri->getValue()[0]['value']
-  //     );
-
-  //     array_push($variables['caroussel_items'], $url);
-  //   }
-  // }
+  foreach ($variables['links'] as $i => $link) {
+    // @var \Drupal\language\Entity\ConfigurableLanguage $linkLanguage
+    $linkLanguage = $link['link']['#options']['language'];
+    $variables['links'][$i]['link']['#title'] = strtoupper($linkLanguage->get('id'));
+  }
 }
-
-
-
