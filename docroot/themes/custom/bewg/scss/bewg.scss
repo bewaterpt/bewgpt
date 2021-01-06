@@ -638,16 +638,18 @@ body {
                 margin-bottom: 5%;
 
                 .view-content {
+                  width: 90%;
+                  margin: 0 auto;
 
                   .views-row {
 
                     .views-col {
                       background-color: rgba(255,255,255,1);
                       border-bottom:1px solid  #ccc;
-                      margin-right: 5%;
                       float: left;
                       position: relative;
                       width: 45%!important;
+                      margin-bottom: 5%;
                       
                       .views-field-field-teaser-media {
                         width: 45%;
