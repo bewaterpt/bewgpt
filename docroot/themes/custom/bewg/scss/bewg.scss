@@ -567,7 +567,7 @@ body {
             width: 500px;
             margin: 0 auto;
             margin-bottom: 5%;
-            
+
             div {
 
               .view {
@@ -580,23 +580,23 @@ body {
 
                       #leaflet-map-node-static-map-68-field-map {
                         border: 1px solid white;
-    
+
                         .leaflet-control-container {
-    
+
                           .leaflet-top {
-    
+
                             .leaflet-control-fullscreen {
                               display: none;
                             }
                           }
-    
+
                           .leaflet-right {
                             display: none;
                           }
                         }
                       }
                     }
-  
+
                   }
                 }
               }
@@ -607,7 +607,7 @@ body {
             width: 500px;
             margin: 0 auto;
             margin-bottom: 5%;
-            
+
             div {
 
               .view {
@@ -620,23 +620,23 @@ body {
 
                       #leaflet-map-node-static-map-70-field-map {
                         border: 1px solid white;
-    
+
                         .leaflet-control-container {
-    
+
                           .leaflet-top {
-    
+
                             .leaflet-control-fullscreen {
                               display: none;
                             }
                           }
-    
+
                           .leaflet-right {
                             display: none;
                           }
                         }
                       }
                     }
-  
+
                   }
                 }
               }
@@ -665,8 +665,8 @@ body {
                       position: relative;
                       width: 47.5%!important;
                       margin-bottom: 5%;
-                      
-                       
+
+
                       &.col-1 {
                         margin-right: 5%;
                       }
@@ -847,6 +847,10 @@ body {
             transition: 0.5s;
             height: 140px;
             
+
+            &.menu-expanded {
+              margin-left: 0;
+            }
 
             div {
 
