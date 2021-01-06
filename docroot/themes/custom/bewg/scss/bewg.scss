@@ -389,7 +389,7 @@ body {
                   }
                 }
               }
-              // Article
+              //Article
               .field--name-field-paragraphs {
                 width: 70%;
                 margin: 20px 15% 20px 15%;
@@ -674,7 +674,7 @@ body {
                         width: 45%;
                         /* margin-right: 4%; */
                         float: left;
-                        margin-top: 30px;
+                        margin-top: calc(30px + 2%);
                         padding: 15px;
 
                         .field-content {
@@ -698,6 +698,10 @@ body {
                         /* margin-bottom: 29px; */
                         height: 35px;
                         padding: 5px;
+                        background-image: linear-gradient(90deg, #10a6a6, #3c6ba8);
+                        margin: 2%;
+                        width: 96%;
+                        color: white;
 
                         span {
 
@@ -711,7 +715,7 @@ body {
                         color: #666666;
                         width: 50%;
                         float:right;
-                        margin-top: 35px;
+                        margin-top: calc(35px + 2%);
                         margin-right: 5%;
 
                         .field-content {
