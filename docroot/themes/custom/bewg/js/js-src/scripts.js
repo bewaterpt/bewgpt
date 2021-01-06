@@ -73,17 +73,17 @@
      }
 
     if ($('#block-languageswitcher').length > 0) {
-      var t = setTimeout(function () {
+      var i = setInterval(function () {
         var activeLang = $('#block-languageswitcher').find('li.is-active');
 
         console.log($('#block-languageswitcher').find('li').clone(true));
 
-        if(activeLang.index() > 0) {
-          console.log('Hello there');
+        if(activeLang.length > 0 && activeLang.index() > 0) {
+          clearInterval(i);
           $('#block-languageswitcher').find('.links').prepend(activeLang.clone(true));
           activeLang.remove();
         }
-      }, 100);
+      }, 10);
     }
   });
 })(jQuery)
