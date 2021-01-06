@@ -76,6 +76,8 @@
       var i = setInterval(function () {
         var activeLang = $('#block-languageswitcher').find('li.is-active');
 
+        console.log(activeLang);
+
         if(activeLang.length > 0 && activeLang.index() > 0) {
           clearInterval(i);
           $('#block-languageswitcher').find('.links').prepend(activeLang.clone(true));
