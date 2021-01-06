@@ -10,7 +10,7 @@
         $(event.currentTarget).find(".subMenu_active").removeClass("subMenu_active");
         $(event.currentTarget).toggleClass("menuDrop");
         $(event.currentTarget).find(".menu").toggleClass("active");
-        
+
         console.log("entrou if");
       }
       else if($(event.currentTarget).hasClass("menu-item--active-trail")==true){
@@ -36,10 +36,7 @@
     container.toggleClass("sidebar_inactive");
     $("#content").toggleClass("content_active");
     $(".menu_btn_container").toggleClass("menu_btn_container_active");
-    //barra do footer reduzir o tamanho
-    $("#block-views-block-frontpage-footer-block-1").css("margin-left","0px");
-    $("#block-views-block-frontpage-footer-block-1").css("transition","margin-left 0.5s");
-    // $(".view-frontpage-footer .view-content table").css("margin","0 25% 0 calc(25% - 150px)");
+    $('#block-views-block-frontpage-footer-block-1').toggleClass('menu-expanded');
   });
 
   $(document).mouseup(function(e){
