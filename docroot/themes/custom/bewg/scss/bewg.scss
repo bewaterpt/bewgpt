@@ -336,7 +336,6 @@ body {
                 right: 100px;
 
               }
-
               .field--name-field-basic-page-paragraphs {
                 text-align: left;
                 position: relative;
@@ -389,9 +388,7 @@ body {
                     background: #555;
                   }
                 }
-
               }
-
               // Article
               .field--name-field-paragraphs {
                 width: 70%;
@@ -420,7 +417,7 @@ body {
                       }
                       ul {
                         margin: 0 0 0.75em;
-                        
+
                       }
                     }
                   }
@@ -571,35 +568,38 @@ body {
             margin: 0 auto;
             margin-bottom: 5%;
 
-            div {
+            &.block-views-blockstatic-maps-block-2 {
 
-              .view {
-
-                .views-row {
-
-                  .views-field {
-
-                    .field-content {
-
-                      #leaflet-map-node-static-map-68-field-map {
-                        border: 1px solid white;
-    
-                        .leaflet-control-container {
-    
-                          .leaflet-top {
-    
-                            .leaflet-control-fullscreen {
+              div {
+  
+                .view {
+  
+                  .views-row {
+  
+                    .views-field {
+  
+                      .field-content {
+  
+                        #leaflet-map-node-static-map-68-field-map {
+                          border: 1px solid white;
+      
+                          .leaflet-control-container {
+      
+                            .leaflet-top {
+      
+                              .leaflet-control-fullscreen {
+                                display: none;
+                              }
+                            }
+      
+                            .leaflet-right {
                               display: none;
                             }
                           }
-    
-                          .leaflet-right {
-                            display: none;
-                          }
                         }
                       }
+    
                     }
-  
                   }
                 }
               }
