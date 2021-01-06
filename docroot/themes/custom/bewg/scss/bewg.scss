@@ -302,26 +302,26 @@ body {
             article {
               position: relative;
 
-              .field--name-field-subpage-image {
-                position: fixed;
-                z-index: 0;
-                top: 0;
+              // .field--name-field-subpage-image {
+              //   position: fixed;
+              //   z-index: 0;
+              //   top: 0;
 
-                .field__label {
-                  display: none;
+              //   .field__label {
+              //     display: none;
 
-                }
+              //   }
 
-                .field__item {
+              //   .field__item {
 
-                  img {
-                    height: 100%;
-                    min-height: 100vh;
-                    min-width: 100vw;
+              //     img {
+              //       height: 100%;
+              //       min-height: 100vh;
+              //       min-width: 100vw;
 
-                  }
-                }
-              }
+              //     }
+              //   }
+              // }
 
               .field--name-field-header {
                 color: white;
