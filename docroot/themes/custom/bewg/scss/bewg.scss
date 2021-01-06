@@ -862,6 +862,8 @@ body {
                     border-spacing: 0!important;
                     color: white;
                     background-color: transparent;
+                    min-width: calc(50vw / 2);
+                    overflow: hidden;
 
                     tbody {
                       border: none;
