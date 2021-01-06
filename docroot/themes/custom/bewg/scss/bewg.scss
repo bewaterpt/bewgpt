@@ -336,7 +336,6 @@ body {
                 right: 100px;
 
               }
-
               .field--name-field-basic-page-paragraphs {
                 text-align: left;
                 position: relative;
@@ -389,10 +388,8 @@ body {
                     background: #555;
                   }
                 }
-
               }
-
-              // Article
+              //Article
               .field--name-field-paragraphs {
                 width: 70%;
                 margin: 20px 15% 20px 15%;
@@ -417,6 +414,10 @@ body {
                         margin: 0 0 10px 0!important;
                         text-align: center;
                         color: white;
+                      }
+                      ul {
+                        margin: 0 0 0.75em;
+
                       }
                     }
                   }
@@ -561,67 +562,81 @@ body {
               }
             }
           }
-          //MAPA
-          .block-views-blockmapa-block-1 {
+          //MAPA SOBRENÓS
+          .block-views-blockstatic-maps-block-1 {
             width: 500px;
             margin: 0 auto;
             margin-bottom: 5%;
-
+            
             div {
 
               .view {
 
-                .view-content {
+                .views-row {
 
-                  #leaflet-map-view-mapa-block-1 {
-                    border: 1px solid white;
+                  .views-field {
 
-                    .leaflet-control-container {
+                    .field-content {
 
-                      .leaflet-top {
-
-                        .leaflet-control-fullscreen {
-                          display: none;
+                      #leaflet-map-node-static-map-68-field-map {
+                        border: 1px solid white;
+    
+                        .leaflet-control-container {
+    
+                          .leaflet-top {
+    
+                            .leaflet-control-fullscreen {
+                              display: none;
+                            }
+                          }
+    
+                          .leaflet-right {
+                            display: none;
+                          }
                         }
                       }
-
-                      .leaflet-right {
-                        display: none;
-                      }
                     }
+  
                   }
                 }
               }
             }
           }
-          //MAPA INTERNACIONAL
-          .block-views-blockmapa-internacional-block-1 {
-            width: 630px;
+          //MAPA SEDE-CONTACTOS
+          .block-views-blockstatic-maps-block-2 {
+            width: 500px;
             margin: 0 auto;
             margin-bottom: 5%;
-
+            
             div {
 
               .view {
 
-                .view-content {
+                .views-row {
 
-                  #leaflet-map-view-mapa-internacional-block-1 {
-                    border: 1px solid white;
+                  .views-field {
 
-                    .leaflet-control-container {
+                    .field-content {
 
-                      .leaflet-top {
-
-                        .leaflet-control-fullscreen {
-                          display: none;
+                      #leaflet-map-node-static-map-70-field-map {
+                        border: 1px solid white;
+    
+                        .leaflet-control-container {
+    
+                          .leaflet-top {
+    
+                            .leaflet-control-fullscreen {
+                              display: none;
+                            }
+                          }
+    
+                          .leaflet-right {
+                            display: none;
+                          }
                         }
                       }
-
-                      .leaflet-right {
-                        display: none;
-                      }
                     }
+  
                   }
                 }
               }
@@ -638,21 +653,28 @@ body {
                 margin-bottom: 5%;
 
                 .view-content {
+                  width: 90%;
+                  margin: 0 auto;
 
                   .views-row {
 
                     .views-col {
                       background-color: rgba(255,255,255,1);
                       border-bottom:1px solid  #ccc;
-                      margin-right: 5%;
                       float: left;
                       position: relative;
+                      width: 47.5%!important;
+                      margin-bottom: 5%;
                       
+                       
+                      &.col-1 {
+                        margin-right: 5%;
+                      }
                       .views-field-field-teaser-media {
                         width: 45%;
                         /* margin-right: 4%; */
                         float: left;
-                        margin-top: 30px;
+                        margin-top: calc(30px + 2%);
                         padding: 15px;
 
                         .field-content {
@@ -676,6 +698,10 @@ body {
                         /* margin-bottom: 29px; */
                         height: 35px;
                         padding: 5px;
+                        background-image: linear-gradient(90deg, #10a6a6, #3c6ba8);
+                        margin: 2%;
+                        width: 96%;
+                        color: white;
 
                         span {
 
@@ -689,7 +715,7 @@ body {
                         color: #666666;
                         width: 50%;
                         float:right;
-                        margin-top: 35px;
+                        margin-top: calc(35px + 2%);
                         margin-right: 5%;
 
                         .field-content {
@@ -982,7 +1008,9 @@ body {
         }
 
         #sidebar-first {
-          background-image: linear-gradient(180deg, #3c6ba8, #10a6a6);
+          // background-image: linear-gradient(180deg, #3c6ba8, #10a6a6);
+          background-color: #3c6ba8;
+          -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.8)));
           position: fixed;
           width: 300px;
           z-index: 5;
