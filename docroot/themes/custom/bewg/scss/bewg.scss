@@ -363,6 +363,7 @@ body {
                         width: 100%;
                         height: auto;
                         margin-bottom: 20px;
+
                       }
                       h2, h3,h4, h5, h6 {
                         padding: 10px;
@@ -374,10 +375,15 @@ body {
                         margin-bottom: 30px!important;
                         line-height: 40px;
                         vertical-align: middle;
+
                       }
 
                       p {
                         margin-top: 10px;
+                      }
+                      ul {
+                        list-style-type: circle;
+
                       }
                     }
                     .field--name-field-map {
@@ -454,7 +460,7 @@ body {
               }
 
               .paragraph--type--image {
-                width: 50%;
+                width: 100%;
                 margin: 10px auto;
                 height: auto;
               }
