@@ -212,7 +212,8 @@ body {
 
           // ATIVIDADE BOX
           #block-views-block-sub-pages-block-1,
-          #block-views-block-sub-pages-block-2 {
+          #block-views-block-sub-pages-block-2,
+          #block-views-block-sub-pages-block-3 {
             .views-row {
               margin: 2% 15% 0 15%;
               width: 70%;
@@ -383,7 +384,7 @@ body {
                       }
                       ul {
                         list-style-type: circle;
-
+                        margin-left: 20px;
                       }
                     }
                     .field--name-field-map {
@@ -452,13 +453,14 @@ body {
                       }
                       ul {
                         margin: 0 0 0.75em;
+                        list-style-type: circle;
+                        margin-left: 20px;
 
                       }
                     }
                   }
                 }
               }
-
               .paragraph--type--image {
                 width: 100%;
                 margin: 10px auto;
