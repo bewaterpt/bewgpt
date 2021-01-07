@@ -343,7 +343,7 @@ body {
                 z-index: 1;
                 margin-bottom: 20px;
                 padding-bottom: 30px;
-                margin: 10px 20% 5% 20%;
+                margin: 110px 20% 5% 20%;
 
                 .field__item {
                   width: 100%;
@@ -365,6 +365,10 @@ body {
                         margin: 0!important;
                         text-align: center;
                         color: white;
+                        height: 60px;
+                        margin-bottom: 30px!important;
+                        line-height: 40px;
+                        vertical-align: middle;
                       }
 
                       p {
