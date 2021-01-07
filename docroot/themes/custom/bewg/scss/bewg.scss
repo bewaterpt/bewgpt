@@ -83,7 +83,7 @@ body {
 
         .menu_btn_container {
           transform: rotate(180deg);
-          transition: transform 0.5s;
+          // transition: transform 0.5s;
           position: fixed;
           top: calc(50% - 25px);
           z-index: 4;
@@ -849,8 +849,9 @@ body {
             background-image: linear-gradient(to left, rgba(60, 107, 168, 1),  rgba(60, 107, 168, 0.85), rgba(60, 107, 168, 0.83));
             transition: 0.5s;
             height: 140px;
+            max-height: 140px;
             margin-left: 300px;
-            transition: margin-left .5s ease;
+            transition: margin-left max-height .5s ease;
 
             &.menu-expanded {
               margin-left: 0;
@@ -904,10 +905,9 @@ body {
           }
 
           .views-frontpage-footer-closed {
-            height: 0!important;
+            max-height: 0 !important;
             padding: 0!important;
             overflow: hidden;
-            // transition: 0.5s;
           }
 
           .webform-element-description {
