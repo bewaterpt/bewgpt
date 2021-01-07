@@ -44,7 +44,7 @@ function bewg_preprocess_html(&$variables) {
  */
 function bewg_preprocess_page(&$variables) {
   if (isset($variables["node"])) {
-    if ($variables["node"]->getType() == "page" || $variables["node"]->getType() == "sub_page") {
+    if ($variables["node"]->getType() == "page" || $variables["node"]->getType() == "subpage") {
       $targetId = $variables["node"]->field_background_image->target_id;
       $mediaEntity = Media::load($targetId);
       $fileEntity = File::load($mediaEntity->field_image->target_id);

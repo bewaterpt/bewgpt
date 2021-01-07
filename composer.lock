@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c6d7ad786c4d0c3cd1b408db82209a06",
+    "content-hash": "82fde31e6ceb60a331165155f0b7fd77",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2838,6 +2838,9 @@
                         "[web-root]/profiles/README.txt": "assets/scaffold/files/profiles.README.txt",
                         "[web-root]/themes/README.txt": "assets/scaffold/files/themes.README.txt"
                     }
+                },
+                "patches_applied": {
+                    "Media Entity doesn't provide a resolution limiter for image fields": "https://www.drupal.org/files/issues/2020-08-30/media_library---file---upload_form_not_getting_populated_with_image_size_validators-3008292-23.patch"
                 }
             },
             "autoload": {
@@ -3319,7 +3322,9 @@
                         "message": "Covered by Drupal's security advisory policy"
                     }
                 },
-                "patches_applied": []
+                "patches_applied": {
+                    "Back button for comparison page": "https://www.drupal.org/files/issues/back_button_for-2853193-4.patch"
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -3564,7 +3569,10 @@
                         "message": "Covered by Drupal's security advisory policy"
                     }
                 },
-                "patches_applied": []
+                "patches_applied": {
+                    "Provide inline entity form FieldWidgetDisplay": "https://www.drupal.org/files/issues/2019-07-04/2858438_17.patch",
+                    "Re-order + remove broken with the Entity Reference (and File) widget": "https://www.drupal.org/files/issues/2020-06-05/2851580-88.patch"
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -3768,7 +3776,9 @@
                         "message": "Covered by Drupal's security advisory policy"
                     }
                 },
-                "patches_applied": []
+                "patches_applied": {
+                    "Undefined property: stdClass::$region in field_group_form_process()": "https://www.drupal.org/files/issues/2020-06-15/3059614-37.patch"
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -3852,6 +3862,67 @@
                 "source": "https://cgit.drupalcode.org/focal_point",
                 "issues": "https://drupal.org/project/issues/focal_point",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/fontawesome",
+            "version": "2.17.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fontawesome.git",
+                "reference": "8.x-2.17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fontawesome-8.x-2.17.zip",
+                "reference": "8.x-2.17",
+                "shasum": "ee077ae8295a36d76e85131e975a3626e199c404"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.17",
+                    "datestamp": "1593708087",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel.Moberly",
+                    "homepage": "https://www.drupal.org/user/1160788"
+                },
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                },
+                {
+                    "name": "inders",
+                    "homepage": "https://www.drupal.org/user/127640"
+                },
+                {
+                    "name": "truls1502",
+                    "homepage": "https://www.drupal.org/user/325866"
+                }
+            ],
+            "description": "The web's most popular icon set and toolkit.",
+            "homepage": "https://www.drupal.org/project/fontawesome",
+            "support": {
+                "source": "https://git.drupalcode.org/project/fontawesome"
             }
         },
         {
@@ -5044,7 +5115,10 @@
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 },
-                "patches_applied": []
+                "patches_applied": {
+                    "Policies should declare a config dependency on the plugin modules": "https://www.drupal.org/files/issues/2020-04-14/2918974-7-11.patch",
+                    "Importing configuration on site without password_policy activated": "https://www.drupal.org/files/issues/2020-03-20/password-policy-2771129-110.patch"
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [

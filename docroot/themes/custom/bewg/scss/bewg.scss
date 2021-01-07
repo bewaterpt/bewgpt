@@ -83,12 +83,12 @@ body {
 
         .menu_btn_container {
           transform: rotate(180deg);
-          transition: transform 0.5s;
-          transition: left 0.5s;
+          // transition: transform 0.5s;
           position: fixed;
           top: calc(50% - 25px);
           z-index: 4;
           left: 320px;
+          mix-blend-mode: difference;
 
           .menuBar_btn {
             width: 40px;
@@ -96,9 +96,11 @@ body {
             background-image: url("../img/double_arrow_right.png");
             background-size: cover;
             filter: invert(1);
-            --webkit-animation: backward 1.2s infinite alternate-reverse;
             animation: backward 1.2s infinite alternate-reverse;
-
+            --webkit-animation: backward 1.2s infinite alternate-reverse;
+            --moz-animation: backward 1.2s infinite alternate-reverse;
+            --ms-animation: backward 1.2s infinite alternate-reverse;
+            --o-animation: backward 1.2s infinite alternate-reverse;
           }
 
           .menuBar_btn:hover {
@@ -302,26 +304,26 @@ body {
             article {
               position: relative;
 
-              .field--name-field-subpage-image {
-                position: fixed;
-                z-index: 0;
-                top: 0;
+              // .field--name-field-subpage-image {
+              //   position: fixed;
+              //   z-index: 0;
+              //   top: 0;
 
-                .field__label {
-                  display: none;
+              //   .field__label {
+              //     display: none;
 
-                }
+              //   }
 
-                .field__item {
+              //   .field__item {
 
-                  img {
-                    height: 100%;
-                    min-height: 100vh;
-                    min-width: 100vw;
+              //     img {
+              //       height: 100%;
+              //       min-height: 100vh;
+              //       min-width: 100vw;
 
-                  }
-                }
-              }
+              //     }
+              //   }
+              // }
 
               .field--name-field-header {
                 color: white;
@@ -848,10 +850,12 @@ body {
             overflow: hidden;
             z-index: 2;
             padding: 10px;
-            background-color: rgba(60, 107, 168,0.8);
+            background-image: linear-gradient(to left, rgba(60, 107, 168, 1),  rgba(60, 107, 168, 0.85), rgba(60, 107, 168, 0.83));
             transition: 0.5s;
             height: 140px;
-            
+            max-height: 140px;
+            margin-left: 300px;
+            transition: margin-left max-height .5s ease;
 
             &.menu-expanded {
               margin-left: 0;
@@ -871,7 +875,6 @@ body {
                     border-spacing: 0!important;
                     color: white;
                     background-color: transparent;
-                    
 
                     tbody {
                       border: none;
@@ -906,10 +909,9 @@ body {
           }
 
           .views-frontpage-footer-closed {
-            height: 0!important;
+            max-height: 0 !important;
             padding: 0!important;
             overflow: hidden;
-            transition: 0.5s;
           }
 
           .webform-element-description {
@@ -923,7 +925,7 @@ body {
               width: 80%;
               margin: 2% 10% 5% 10%;
               border-spacing: 0 25px;
-              transition: 0.5s;
+              // transition: 0.5s;
 
               tbody {
                 background-color: transparent !important;
@@ -954,7 +956,6 @@ body {
                       color: #666666;
                       font-size: 0.9em !important;
                       word-break: break-all;
-                      // display: inline-block;
                       width: 58%;
                       float:left;
 
@@ -1003,7 +1004,6 @@ body {
 
           /*TEXTO DA ATIVIDADE*/
           .field--name-field-header {
-            //padding: 100px 30px 0px 30px;
 
             .field__item{
               color: #ffffff;
@@ -1019,19 +1019,16 @@ body {
         }
 
         #sidebar-first {
-          // background-image: linear-gradient(180deg, #3c6ba8, #10a6a6);
           background-image: linear-gradient(to bottom, rgba(60, 107, 168, 1), rgba(60, 107, 168, .8));
           position: fixed;
           width: 300px;
+          max-width: 300px;
           z-index: 5;
           overflow: hidden;
-          transition-property: width;
-          transition-duration: 0.5s;
+          transition: max-width 0.5s ease;
 
           &.sidebar_inactive {
-            width: 0px!important;
-            transition-property: width;
-            transition-duration: 0.5s;
+            max-width: 0px !important;
             overflow: hidden;
           }
 
