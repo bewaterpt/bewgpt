@@ -375,6 +375,25 @@ body {
                         margin-top: 10px;
                       }
                     }
+                    .field--name-field-map {
+
+                      .leaflet-container {
+
+                        .leaflet-control-container {
+
+                          .leaflet-top {
+
+                            .leaflet-control-fullscreen {
+                              display: none;
+
+                            }
+                          }
+                          .leaflet-bottom {
+                            display: none;
+                          }
+                        }
+                      }
+                    }
                   }
                   ::-webkit-scrollbar {
                     width: 10px;
