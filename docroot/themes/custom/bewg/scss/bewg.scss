@@ -998,15 +998,12 @@ body {
 
           &>div {
             position: relative;
+            height: 100vh;
+            min-width: 300px;
 
             &.sidebar_inactive {
               max-width: 0px !important;
               overflow: hidden;
-            }
-
-            &>div {
-              height: 100vh;
-              min-width: 300px;
             }
 
             #block-languageswitcher {
