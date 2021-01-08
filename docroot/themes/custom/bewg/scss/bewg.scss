@@ -363,6 +363,7 @@ body {
                   }
                 }
               }
+
               //Article
               .field--name-field-paragraphs {
                 width: 70%;
@@ -399,6 +400,7 @@ body {
                   }
                 }
               }
+
               .paragraph--type--image {
                 width: 100%;
                 margin: 10px auto;
@@ -506,14 +508,10 @@ body {
                 background-size: cover;
 
               }
+
               .field--name-field-introducao {
                 display:none;
               }
-              .field--type-geofield {
-
-              }
-
-
             }
 
             .field--name-webform {
@@ -1010,7 +1008,7 @@ body {
               position: absolute;
               right: 0;
               left: 0;
-              bottom: 30px;
+              bottom: 100px;
               width: 60px;
               margin: 0 auto;
 
