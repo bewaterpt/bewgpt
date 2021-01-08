@@ -128,68 +128,6 @@ body {
             display: none;
           }
 
-          #block-languageswitcher {
-            position: absolute;
-            right: -30px;
-            top: 80px;
-            z-index: 100;
-            transition: right .2s linear;
-
-            .contextual {
-                top: -30px;
-                left: -60px;
-
-              button {
-                left: -60px;
-
-                &.visually-hidden {
-                  position: relative !important;
-                }
-              }
-            }
-
-            &:hover {
-              right: 0;
-            }
-
-            .links {
-
-              li {
-                font-weight: 700;
-                display: inline-block;
-                width: 30px;
-                height: 30px;
-                position: relative;
-                background-color: white;
-
-                &:hover {
-
-                  a {
-                    color: black;
-                  }
-                }
-
-                a {
-                  display: inline-block;
-                  font-size: 14px;
-                  color: #666666;
-                  width: 30px;
-                  height: 30px;
-                  text-align: center;
-                  line-height: 31px;
-                }
-
-                &.is-active {
-                  background-image: linear-gradient(180deg, #3c6ba8, #10a6a6);
-
-                  a {
-                    color: white !important;
-                  }
-                }
-              }
-            }
-          }
-
           .footer_btn_container {
             position: fixed;
             bottom: 160px;
@@ -1034,6 +972,68 @@ body {
           &>div {
             height: 100vh;
             min-width: 300px;
+          }
+
+          #block-languageswitcher {
+            position: absolute;
+            right: -30px;
+            top: 80px;
+            z-index: 100;
+            transition: right .2s linear;
+
+            .contextual {
+                top: -30px;
+                left: -60px;
+
+              button {
+                left: -60px;
+
+                &.visually-hidden {
+                  position: relative !important;
+                }
+              }
+            }
+
+            &:hover {
+              right: 0;
+            }
+
+            .links {
+
+              li {
+                font-weight: 700;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                position: relative;
+                background-color: white;
+
+                &:hover {
+
+                  a {
+                    color: black;
+                  }
+                }
+
+                a {
+                  display: inline-block;
+                  font-size: 14px;
+                  color: #666666;
+                  width: 30px;
+                  height: 30px;
+                  text-align: center;
+                  line-height: 31px;
+                }
+
+                &.is-active {
+                  background-image: linear-gradient(180deg, #3c6ba8, #10a6a6);
+
+                  a {
+                    color: white !important;
+                  }
+                }
+              }
+            }
           }
 
           #block-bewg-branding {
