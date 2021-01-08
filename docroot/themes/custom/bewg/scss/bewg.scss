@@ -1003,15 +1003,15 @@ body {
           overflow: hidden;
           transition: max-width 0.5s ease;
 
+          &.sidebar_inactive {
+            max-width: 0px !important;
+            overflow: hidden;
+          }
+
           &>div {
             position: relative;
             height: 100vh;
             min-width: 300px;
-
-            &.sidebar_inactive {
-              max-width: 0px !important;
-              overflow: hidden;
-            }
 
             #block-languageswitcher {
               position: absolute;
@@ -1027,10 +1027,6 @@ body {
 
                 button {
                   left: -60px;
-
-                  // &.visually-hidden {
-                  //   position: relative !important;
-                  // }
                 }
               }
 
