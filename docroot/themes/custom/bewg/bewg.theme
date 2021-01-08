@@ -39,11 +39,7 @@ function bewg_preprocess_html(&$variables) {
   }
 
   $current_path = \Drupal::service('path.current')->getPath();
-<<<<<<< HEAD
   $variables['current_path'] = preg_replace("/\//", '-', \Drupal::service('path_alias.manager')->getAliasByPath($current_path));
-=======
-  $variables['current_path'] = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
->>>>>>> 7bf077ec7998e9b925d6225788ac140e189abf6c
 }
 
 /**
