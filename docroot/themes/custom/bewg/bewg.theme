@@ -37,6 +37,10 @@ function bewg_preprocess_html(&$variables) {
   else {
     $variables['attributes']['class'][] = 'no-sidebars';
   }
+  
+  $current_path = \Drupal::service('path.current')->getPath();
+  $variables['current_path'] = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
+  dump($variables['current_path'] = \Drupal::service('path_alias.manager')->getAliasByPath($current_path)); 
 }
 
 /**
@@ -59,6 +63,8 @@ function bewg_preprocess_page(&$variables) {
       $variables["background_url"] = "/themes/custom/bewg/img/bg-default.jpg";
     }
   }
+
+  
 }
 
 /**
@@ -76,3 +82,5 @@ function bewg_preprocess_links__language_block(&$variables) {
     // dump($link);
   }
 }
+
+
