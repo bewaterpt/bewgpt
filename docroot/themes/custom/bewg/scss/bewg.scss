@@ -280,8 +280,6 @@ body {
                 text-align: left;
                 position: relative;
                 z-index: 1;
-                // margin-bottom: 20px;
-                padding-bottom: 30px;
                 margin: 110px 20% 0% 20%;
 
                 .field__item {
@@ -356,7 +354,6 @@ body {
                   ::-webkit-scrollbar-thumb {
                     background: #888;
                   }
-
                   /* Handle on hover */
                   ::-webkit-scrollbar-thumb:hover {
                     background: #555;
