@@ -510,7 +510,7 @@ body {
                 display:none;
               }
               .field--type-geofield {
-                
+
               }
 
 
@@ -1008,10 +1008,11 @@ body {
 
           #block-languageswitcher {
             position: absolute;
-            right: -30px;
-            top: 80px;
-            z-index: 100;
-            transition: right .2s linear;
+            right: 0;
+            left: 0;
+            bottom: 30px;
+            width: 60px;
+            margin: 0 auto;
 
             .contextual {
                 top: -30px;
@@ -1020,14 +1021,10 @@ body {
               button {
                 left: -60px;
 
-                &.visually-hidden {
-                  position: relative !important;
-                }
+                // &.visually-hidden {
+                //   position: relative !important;
+                // }
               }
-            }
-
-            &:hover {
-              right: 0;
             }
 
             .links {
@@ -1038,12 +1035,12 @@ body {
                 width: 30px;
                 height: 30px;
                 position: relative;
-                background-color: white;
+                border-radius: 50%;
 
                 &:hover {
 
                   a {
-                    color: black;
+                    color: white;
                   }
                 }
 
@@ -1053,15 +1050,17 @@ body {
                   color: #666666;
                   width: 30px;
                   height: 30px;
+
                   text-align: center;
                   line-height: 31px;
                 }
 
                 &.is-active {
-                  background-image: linear-gradient(180deg, #3c6ba8, #10a6a6);
+                  // background-image: linear-gradient(180deg, #3c6ba8, #10a6a6);
+                  background-color: white;
 
                   a {
-                    color: white !important;
+                    color: black !important;
                   }
                 }
               }
