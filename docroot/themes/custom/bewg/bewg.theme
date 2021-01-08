@@ -37,10 +37,9 @@ function bewg_preprocess_html(&$variables) {
   else {
     $variables['attributes']['class'][] = 'no-sidebars';
   }
-  
+
   $current_path = \Drupal::service('path.current')->getPath();
-  $variables['current_path'] = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
-  dump($variables['current_path'] = \Drupal::service('path_alias.manager')->getAliasByPath($current_path)); 
+  $variables['current_path'] = preg_replace("/\//", '-', \Drupal::service('path_alias.manager')->getAliasByPath($current_path));
 }
 
 /**
@@ -64,7 +63,7 @@ function bewg_preprocess_page(&$variables) {
     }
   }
 
-  
+
 }
 
 /**
