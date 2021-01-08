@@ -150,7 +150,8 @@ body {
 
           // ATIVIDADE BOX
           #block-views-block-sub-pages-block-1,
-          #block-views-block-sub-pages-block-2 {
+          #block-views-block-sub-pages-block-2,
+          #block-views-block-sub-pages-block-3 {
             .views-row {
               margin: 2% 15% 0 15%;
               width: 70%;
@@ -297,6 +298,12 @@ body {
                       height: fit-content;
                       padding: 2%;
 
+                      img {
+                        width: 100%;
+                        height: auto;
+                        margin-bottom: 20px;
+
+                      }
                       h2, h3,h4, h5, h6 {
                         padding: 10px;
                         background-image:linear-gradient(90deg, #10a6a6, #3c6ba8);
@@ -307,10 +314,34 @@ body {
                         margin-bottom: 30px!important;
                         line-height: 40px;
                         vertical-align: middle;
+
                       }
 
                       p {
                         margin-top: 10px;
+                      }
+                      ul {
+                        list-style-type: circle;
+                        margin-left: 20px;
+                      }
+                    }
+                    .field--name-field-map {
+
+                      .leaflet-container {
+
+                        .leaflet-control-container {
+
+                          .leaflet-top {
+
+                            .leaflet-control-fullscreen {
+                              display: none;
+
+                            }
+                          }
+                          .leaflet-bottom {
+                            display: none;
+                          }
+                        }
                       }
                     }
                   }
@@ -335,7 +366,7 @@ body {
               //Article
               .field--name-field-paragraphs {
                 width: 70%;
-                margin: 20px 15% 20px 15%;
+                margin: 110px 15% 20px 15%;
                 background-color: rgba(245,245,252,0.85);
                 padding: 20px;
                 z-index: 3;
@@ -360,15 +391,16 @@ body {
                       }
                       ul {
                         margin: 0 0 0.75em;
+                        list-style-type: circle;
+                        margin-left: 20px;
 
                       }
                     }
                   }
                 }
               }
-
               .paragraph--type--image {
-                width: 50%;
+                width: 100%;
                 margin: 10px auto;
                 height: auto;
               }
@@ -478,7 +510,7 @@ body {
                 display:none;
               }
               .field--type-geofield {
-                display: none;
+                
               }
 
 
