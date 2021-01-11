@@ -805,16 +805,29 @@ body {
             padding: 20px;
             margin-top: 10px;
 
-            form>div {
-              width: 50%;
-              margin: 0 auto;
-              text-align: left;
+            form {
 
-              .webform-button--submit {
-                margin-top: 5%;
+              div {
+                width: 50%;
+                margin: 0 auto;
+                text-align: left;
+
+                .webform-button--submit {
+                  margin-top: 5%;
+                }
+              }
+              label {
+                padding: 10px;
+                background-image: linear-gradient(90deg, #10a6a6, #3c6ba8);
+                margin: 0 !important;
+                text-align: center;
+                color: white;
+                height: 60px;
+                margin-bottom: 30px !important;
+                line-height: 40px;
+                vertical-align: middle;
               }
             }
-
             .form-actions {
               text-align: center;
             }
