@@ -179,6 +179,11 @@ body {
 
                   a {
                     color: inherit;
+
+                    @include medium {
+                      font-size: 0.8em;
+                      
+                    }
                   }
                 }
 
@@ -752,9 +757,12 @@ body {
                   z-index: 10;
                   transition:0.5s;
                   font-size: 1.5em;
+                  span {
 
-                  a {
-                    color: inherit;
+                    a {
+                      color: inherit;
+                      
+                    }
                   }
                 }
 
