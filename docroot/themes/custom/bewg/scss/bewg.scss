@@ -171,13 +171,19 @@ body {
                   vertical-align: middle;
                   line-height: 360px;
                   width: 100%;
-                  background-image: url('../img/agua.png');
+                  // background-image: url('../img/agua.png');
+                  background-color: rgba(0,0,0,0.65);
                   z-index: 10;
                   transition:0.5s;
                   font-size: 2em;
 
                   a {
                     color: inherit;
+
+                    @include medium {
+                      font-size: 0.8em;
+                      
+                    }
                   }
                 }
 
@@ -630,7 +636,7 @@ body {
             div {
 
               .view-news {
-                margin-top: 5%;
+                margin-top: 100px;
                 display: block;
                 margin-bottom: 5%;
 
@@ -641,7 +647,7 @@ body {
                   .views-row {
 
                     .views-col {
-                      background-color: rgba(255,255,255,1);
+                      background-color: rgba(255,255,255,0.85);
                       border-bottom:1px solid  #ccc;
                       float: left;
                       position: relative;
@@ -746,13 +752,17 @@ body {
                   vertical-align: middle;
                   line-height: 350px;
                   width: 100%;
-                  background-image: url('../img/agua.png');
+                  // background-image: url('../img/agua.png');
+                  background-color: rgba(0,0,0,0.65);
                   z-index: 10;
                   transition:0.5s;
                   font-size: 1.5em;
+                  span {
 
-                  a {
-                    color: inherit;
+                    a {
+                      color: inherit;
+                      
+                    }
                   }
                 }
 
@@ -803,6 +813,20 @@ body {
             padding: 20px;
             margin-top: 10px;
 
+            form {
+
+              .header-label {
+                padding: 10px;
+                background-image: linear-gradient(90deg, #10a6a6, #3c6ba8);
+                margin: 0 !important;
+                text-align: center;
+                color: white;
+                height: 60px;
+                margin-bottom: 30px !important;
+                line-height: 40px;
+                vertical-align: middle;
+              }
+            }
             form>div {
               width: 50%;
               margin: 0 auto;
@@ -810,9 +834,9 @@ body {
 
               .webform-button--submit {
                 margin-top: 5%;
+                
               }
             }
-
             .form-actions {
               text-align: center;
             }
@@ -1172,6 +1196,51 @@ body {
                 overflow: hidden!important;
                 max-height: fit-content!important;
                 transition: max-height 0.5s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.path-contactos {
+
+  .dialog-off-canvas-main-canvas {
+
+    .page { 
+  
+      main {
+        
+        #content {
+  
+          div {
+            
+            #block-bewg-content {
+
+              article {
+    
+                .field--name-field-basic-page-paragraphs {
+    
+                  .field__item {
+    
+                    .paragraph {
+    
+                      .field--name-field-text {
+    
+                        p {
+    
+                          img {
+                            width: 50%;
+                            height: auto;
+                            
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
           }
