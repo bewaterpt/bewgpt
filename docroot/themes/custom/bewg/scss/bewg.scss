@@ -1154,9 +1154,7 @@ body {
                       }
                     }
                   }
-                  .menu-item--active-trail {
-                    background-color: #005E9B;
-                  }
+                  
 
                   &>.menu-item {
                     font-size: calc(10px + 0.5vw);
@@ -1183,6 +1181,10 @@ body {
                           font-size: calc(5 px +0.5vw);
                           word-spacing: 0px;
                         }
+                      }
+                      .menu-item--active-trail {
+                        background-color: #005E9B;
+                        
                       }
                     }
                   }
