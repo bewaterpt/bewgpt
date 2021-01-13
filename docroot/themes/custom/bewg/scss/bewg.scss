@@ -334,12 +334,13 @@ body {
                       .leaflet-container {
 
                         .leaflet-control-container {
-
+                          border: 5px solid white;
+                          
                           .leaflet-top {
 
                             .leaflet-control-fullscreen {
                               display: none;
-
+                              
                             }
                           }
                           .leaflet-bottom {
