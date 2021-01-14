@@ -74,19 +74,19 @@
     $('.sustentabilidade-column').last().toggleClass("lastTypeColumn");
   }
 
-  if ($('#block-languageswitcher').length > 0) {
-    var i = setInterval(function () {
-      var activeLang = $('#block-languageswitcher').find('li.is-active');
+  // if ($('#block-languageswitcher').length > 0) {
+  //   var i = setInterval(function () {
+  //     var activeLang = $('#block-languageswitcher').find('li.is-active');
 
-      console.log('Active Language: ', activeLang);
+  //     console.log('Active Language: ', activeLang);
 
-      if(activeLang.length > 0 && activeLang.index() > 0) {
-        clearInterval(i);
-        $('#block-languageswitcher').find('.links').prepend(activeLang.clone(true));
-        activeLang.remove();
-      }
-    }, 10);
-  }
+  //     if(activeLang.length > 0 && activeLang.index() > 0) {
+  //       clearInterval(i);
+  //       $('#block-languageswitcher').find('.links').prepend(activeLang.clone(true));
+  //       activeLang.remove();
+  //     }
+  //   }, 10);
+  // }
 })(jQuery)
 
 
