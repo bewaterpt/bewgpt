@@ -765,7 +765,7 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 $settings['config_sync_directory'] = 'sites/default/files/config_58k6uMonRM9gWsAUPLfOOx5-ZXhtxc-bi0twU6S_zCOQEIm7mqnrLp4n_nJBNV-py3hrUlGDZw/sync';
 $config['system.logging']['error_level'] = 'verbose';
 
-$settings['file_private_path'] = 'priv';
+$settings['file_private_path'] = 'private';
 
 // <DDSETTINGS>
 // Please don't edit anything between <DDSETTINGS> tags.
