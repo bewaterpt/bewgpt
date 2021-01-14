@@ -171,7 +171,6 @@ body {
                   vertical-align: middle;
                   line-height: 360px;
                   width: 100%;
-                  // background-image: url('../img/agua.png');
                   background-color: rgba(0,0,0,0.65);
                   z-index: 10;
                   transition:0.5s;
@@ -182,7 +181,7 @@ body {
 
                     @include medium {
                       font-size: 0.8em;
-                      
+
                     }
                   }
                 }
@@ -322,7 +321,7 @@ body {
 
                             .leaflet-control-fullscreen {
                               display: none;
-                              
+
                             }
                           }
                           .leaflet-bottom {
@@ -382,7 +381,7 @@ body {
 
                       }
                       img {
-                        width: 50%;
+                        max-width: 50%;
                         height: auto;
                         margin-top: 20px!important;
                         margin-bottom: 20px!important;
@@ -744,7 +743,7 @@ body {
 
                     a {
                       color: inherit;
-                      
+
                     }
                   }
                 }
@@ -818,7 +817,7 @@ body {
 
               .webform-button--submit {
                 margin-top: 5%;
-                
+
               }
             }
             .form-actions {
@@ -1137,7 +1136,7 @@ body {
                       }
                     }
                   }
-                  
+
 
                   &>.menu-item {
                     font-size: calc(10px + 0.5vw);
@@ -1167,7 +1166,7 @@ body {
                       }
                       .menu-item--active-trail {
                         background-color: #005E9B;
-                        
+
                       }
                     }
                   }
@@ -1198,32 +1197,32 @@ body {
 
   .dialog-off-canvas-main-canvas {
 
-    .page { 
-  
+    .page {
+
       main {
-        
+
         #content {
-  
+
           div {
-            
+
             #block-bewg-content {
 
               article {
-    
+
                 .field--name-field-basic-page-paragraphs {
-    
+
                   .field__item {
-    
+
                     .paragraph {
-    
+
                       .field--name-field-text {
-                        
+
                         p {
-                          
+
                           img {
                             width: 50%;
                             height: auto;
-                            
+
                           }
                         }
                       }
