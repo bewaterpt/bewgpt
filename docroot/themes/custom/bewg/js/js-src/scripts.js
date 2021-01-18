@@ -87,7 +87,7 @@
   //     }
   //   }, 10);
   // }
-  $('#content').lazy({
+  $('#content').Lazy({
     // your configuration goes here
     scrollDirection: 'vertical',
     effect: 'fadeIn',
