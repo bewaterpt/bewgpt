@@ -8,7 +8,7 @@ libraries:
   - bewg/global-styling
   - bewg/global-scripts
   - bewg/slick
-  - bewg/local
+  - bewg/blazy
 regions:
   sidebar: Sidebar
   content: Content
