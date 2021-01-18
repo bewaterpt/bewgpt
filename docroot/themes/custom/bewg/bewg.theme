@@ -43,6 +43,18 @@ function bewg_preprocess_html(&$variables) {
 }
 
 /**
+* Remove or alter attachments on the page
+*/
+function hook_page_attachments_alter(array &$attachments) {
+
+  // Conditionally remove an asset.
+  if (in_array('core/jquery', $attachments['#attached']['library'])) {
+    $index = array_search('core/jquery', $attachments['#attached']['library']);
+    unset($attachments['#attached']['library'][$index]);
+  }
+}
+
+/**
  * Implements template_preprocess_page.
  */
 function bewg_preprocess_page(&$variables) {
