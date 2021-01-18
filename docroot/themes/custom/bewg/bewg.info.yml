@@ -8,6 +8,8 @@ libraries:
   - bewg/global-styling
   - bewg/global-scripts
   - bewg/slick
+  - bewg/lazyload
+  - bewg/local
 regions:
   sidebar: Sidebar
   content: Content

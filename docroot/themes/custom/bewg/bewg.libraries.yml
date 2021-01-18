@@ -28,3 +28,12 @@ lazyload:
       js/jquery.lazy-master/jquery.lazy.min.js: {}
     dependencies:
       -core/jquery
+local:
+  version: VERSION
+  css:
+    theme:
+      css/local.css: {}
+  js:
+    js/script.min.js: {}
+  dependencies:
+    - blazy/load
