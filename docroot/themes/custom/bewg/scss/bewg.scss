@@ -509,6 +509,22 @@ body {
               .field--name-field-introducao {
                 display:none;
               }
+              //noticias
+              .field--type-entity-reference-revisions {
+
+                .field__item {
+
+                  .paragraph {
+
+                    .text-formatted {
+
+                      img {
+                        margin:0 auto!important;
+                      }
+                    }
+                  }
+                }
+              }
             }
 
             .field--name-webform {
