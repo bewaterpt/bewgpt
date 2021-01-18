@@ -48,9 +48,9 @@ function bewg_preprocess_html(&$variables) {
 function hook_page_attachments_alter(array &$attachments) {
 
   // Conditionally remove an asset.
-  if (in_array('core/jquery', $attachments['#attached']['library'])) {
-    $index = array_search('core/jquery', $attachments['#attached']['library']);
-    unset($attachments['#attached']['library'][$index]);
+  if (in_array('core/jquery', $attachments['#content']['bewg/local'])) {
+    $index = array_search('core/jquery', $attachments['#content']['bewg/local']);
+    unset($attachments['#content']['bewg/local'][$index]);
   }
 }
 
