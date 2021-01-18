@@ -20,5 +20,11 @@ slick:
     js/slick/slick.min.js: {}
   dependencies:
     - core/jquery
-
-  
+lazyload:
+  version: VERSION
+  header: true
+  js:
+    theme:
+      js/jquery.lazy-master/jquery.lazy.min.js: {}
+    dependencies:
+      -core/jquery
