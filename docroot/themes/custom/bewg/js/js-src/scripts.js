@@ -97,10 +97,6 @@
     }
   });
 
-  window.addEventListener('load', (event) => {
-    console.log("true");
-
-  });
 
 })(jQuery)
 
