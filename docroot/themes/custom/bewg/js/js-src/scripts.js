@@ -90,6 +90,7 @@
 
 
   window.addEventListener('load', (event) => {
+    console.log("true");
     $('#content').lazy({
       // your configuration goes here
       scrollDirection: 'vertical',
