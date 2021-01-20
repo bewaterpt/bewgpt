@@ -42,8 +42,10 @@
         {{ page.sidebar }}
       </aside>
     {% endif %}
-    
+
     <section id="content" style="background-image: url({{ background_url }}); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;" >
+    {% if  %}
+
     {% if is_front %}
       <div id="footer_btn_container" class="footer_btn_container">
         <div id="footer_close" class="footer_close"> </div>
@@ -51,7 +53,7 @@
     {% endif %}
       {{ page.content }}
     </section>
-  
+
     {% if page.sidebar_second %}
       <aside id="sidebar-second" role="complementary" class="sidebar">
         {{ page.sidebar_second }}
@@ -75,6 +77,6 @@
     </footer>
   {% endif %}
 
-  
+
 
 </div>
