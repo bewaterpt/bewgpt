@@ -41,6 +41,7 @@
         "drupal/address": "~1.0",
         "drupal/core-composer-scaffold": "^9.0",
         "drupal/devel": "^4.0",
+        "drupal/editor_advanced_link": "^1.8",
         "drupal/fontawesome": "^2.17",
         "drupal/geocoder": "^3.14",
         "drupal/geofield": "^1.18",
